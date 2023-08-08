@@ -1,0 +1,15 @@
+{
+  "name": "genshin_initiator",
+  "version": "1.0.0",
+  "description": "我将在50个工作日内完成这个项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.4.0"
+  }
+}
