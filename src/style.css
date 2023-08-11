@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "genshin";
+  src: url(../fonts/hk4e_zh-cn.ttf);
+}
+
+/* 侧边栏 */
 #sidebar {
   position: fixed;
   top: 0;
@@ -14,6 +20,7 @@
   border-bottom-left-radius: 10px; /* 右下角圆角 */
 }
 
+/* 侧边栏按钮 */
 .circle-button {
   width: 30px;
   height: 30px;
@@ -22,4 +29,29 @@
   color: white; /* 文字颜色 */
   border: none;
   margin-bottom: 80px; /* 按钮之间的间距 */
+}
+
+/* 气泡 */
+.tooltip {
+  position: relative;
+  display: none;
+  background-color: #333;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+
+/* 气泡框 */
+.tooltip::before {
+  content: "";
+  font-family: "genshin";
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 8px 0;
+  border-color: #333 transparent transparent transparent;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
 }

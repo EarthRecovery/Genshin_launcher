@@ -15,19 +15,67 @@
     <div id="content"></div>
     <!--侧边栏-->
     <div id="sidebar">
-      <button class="circle-button" onclick="loadPage('init')">
+      <div id="tooltip-init" class="tooltip" onclick="loadPage('init')"></div>
+      <button class="circle-button" id="init-btn" onclick="loadPage('init')">
         <i class="fa-solid fa-house"></i>
       </button>
-      <button class="circle-button" onclick="loadPage('character')">
+      <div
+        id="tooltip-char"
+        class="tooltip"
+        onclick="loadPage('character')"
+      ></div>
+      <button
+        class="circle-button"
+        id="char-btn"
+        onclick="loadPage('character')"
+      >
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
 
     <script>
+      //在一开始就加载主界面
+      myAPI.sendToMain("load-page", "init");
+      myAPI.addToContent();
+      // 向主进程传递文件
       function loadPage(page) {
         myAPI.sendToMain("load-page", page);
         myAPI.addToContent();
       }
+
+      const initBtn = document.getElementById("init-btn");
+      const initTooltip = document.getElementById("tooltip-init");
+      const charBtn = document.getElementById("char-btn");
+      const charTooltip = document.getElementById("tooltip-char");
+
+      // 气泡框展示
+      initBtn.addEventListener("mouseenter", () => {
+        initTooltip.style.display = "block";
+        initTooltip.textContent = "启动页面";
+      });
+
+      initBtn.addEventListener("mouseleave", () => {
+        initTooltip.style.display = "none";
+        initTooltip.textContent = "";
+      });
+
+      charBtn.addEventListener("mouseenter", () => {
+        charTooltip.style.display = "block";
+        charTooltip.textContent = "角色页面";
+      });
+
+      charBtn.addEventListener("mouseleave", () => {
+        charTooltip.style.display = "none";
+        charTooltip.textContent = "";
+      });
     </script>
+
+    <style>
+      body {
+        background-image: url("../img/init.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
   </body>
 </html>

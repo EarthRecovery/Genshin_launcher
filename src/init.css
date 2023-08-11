@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "genshin";
+  src: url(../fonts/hk4e_zh-cn.ttf);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.container {
+  position: absolute;
+  bottom: 60px;
+  left: 500px;
+}
+
+.init-button {
+  position: relative;
+  background-color: #ffcb0b;
+  font-family: "genshin";
+  border: none;
+  border-radius: 20px; /* 控制按钮整体的圆角度数 */
+  padding: 15px 40px; /* 控制按钮的宽度和内边距 */
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* 隐藏伪元素溢出部分 */
+}
+
+.init-button::before,
+.init-button::after {
+  content: "";
+  position: absolute;
+  width: 20px; /* 控制圆形的直径 */
+  height: 100%; /* 控制圆形的高度 */
+  background-color: #ffcb0b;
+  border-radius: 50%;
+}
+
+.init-button::before {
+  left: 0;
+  transform: translateX(-50%); /* 将左圆移至按钮左边 */
+}
+
+.init-button::after {
+  right: 0;
+  transform: translateX(50%); /* 将右圆移至按钮右边 */
+}
+
+.init-button:hover {
+  background-color: #ffcb0b;
+}
