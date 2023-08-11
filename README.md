@@ -14,8 +14,6 @@
 ## 现在已经完成的工作：
 
 1. git版本设置（push用户名为EarthRecovery, token在桌面上）
+1. electron框架搭建
+1. 页面切换
 
-## TODO List
-
-1. electron 项目搭建
-2. 页面设置规划

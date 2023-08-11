@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP -->
+    <script
+      src="https://kit.fontawesome.com/3b3999f4ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Genshin-Init</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!--主页面-->
+    <div id="content"></div>
+    <!--侧边栏-->
+    <div id="sidebar">
+      <button class="circle-button" onclick="loadPage('init')">
+        <i class="fa-solid fa-house"></i>
+      </button>
+      <button class="circle-button" onclick="loadPage('character')">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <script>
+      function loadPage(page) {
+        myAPI.sendToMain("load-page", page);
+        myAPI.addToContent();
+      }
+    </script>
+  </body>
+</html>

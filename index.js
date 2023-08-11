@@ -1,23 +1,34 @@
 // main.js
 
 // electron 模块可以用来控制应用的生命周期和创建原生浏览窗口
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
+const url = require("url");
+const fs = require("fs");
 
 const createWindow = () => {
   // 创建浏览窗口
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 900,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
     },
   });
 
   // 加载 index.html
-  mainWindow.loadFile("index.html");
+  mainWindow.loadFile("./src/main.html");
 
   // 打开开发工具
+  // Handle button clicks
+  ipcMain.on("load-page", (event, page) => {
+    // Read the content of the requested HTML file
+    const pageContent = fs.readFileSync(`./src/${page}.html`, "utf-8");
+
+    // Send the page content back to the renderer process
+    event.reply("load-page-reply", pageContent);
+  });
+
   // mainWindow.webContents.openDevTools()
 };
 
