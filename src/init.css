@@ -12,8 +12,8 @@ body {
 
 .container {
   position: absolute;
-  bottom: 60px;
-  left: 500px;
+  bottom: 100px;
+  left: 518px;
 }
 
 .init-button {
@@ -23,7 +23,7 @@ body {
   border: none;
   border-radius: 20px; /* 控制按钮整体的圆角度数 */
   padding: 15px 40px; /* 控制按钮的宽度和内边距 */
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden; /* 隐藏伪元素溢出部分 */
@@ -51,4 +51,69 @@ body {
 
 .init-button:hover {
   background-color: #ffcb0b;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 150px;
+  width: 900px;
+  height: 80px;
+  background-size: cover;
+}
+
+.shape {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: #ffcb0b;
+  font-family: "genshin";
+  border: none;
+  border-radius: 20px; /* 控制按钮整体的圆角度数 */
+  padding: 13px 40px; /* 控制按钮的宽度和内边距 */
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* 隐藏伪元素溢出部分 */
+  background-image: url("../img/bottom.jpg");
+}
+
+.shape::before,
+.shape::after {
+  content: "";
+  position: absolute;
+  width: 20px; /* 控制圆形的直径 */
+  height: 100%; /* 控制圆形的高度 */
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+}
+
+.head {
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  margin-right: 10px;
+  /* background-image: url("../img/head.jpg"); */
+}
+
+.name {
+  position: absolute;
+  left: 93px;
+  bottom: 13px;
+  transform: translateY(-50%);
+}
+
+.uid {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 44px; /* 将左边的空间推向右边，实现水平居中 */
+  margin-right: 10px;
+}
+
+.level {
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
 }

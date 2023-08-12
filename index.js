@@ -10,7 +10,7 @@ const createWindow = () => {
   // 创建浏览窗口
   const mainWindow = new BrowserWindow({
     width: 1200,
-    height: 900,
+    height: 750,
     // 在这里隐藏菜单栏
     autoHideMenuBar: true,
     webPreferences: {
