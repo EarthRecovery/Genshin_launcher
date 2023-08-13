@@ -56,7 +56,10 @@ const createWindow = () => {
 
         //getLevel
         level = UserInfo.player.levels.rank;
-        event.reply("sendUsername", username, level);
+
+        //getHeadImg
+        UserHeadImg = UserInfo.player.profilePicture.assets.icon;
+        event.reply("sendUser", username, level, UserHeadImg);
       })
       .catch((error) => {
         console.error("Error fetching user data:", error);

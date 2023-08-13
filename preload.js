@@ -15,16 +15,19 @@ contextBridge.exposeInMainWorld("myAPI", {
     ipcRenderer.send("send-uid", inputText);
   },
   getUsername: () => {
-    ipcRenderer.on("sendUsername", (event, UserName, level) => {
+    ipcRenderer.on("sendUser", (event, UserName, level, UserHeadImg) => {
       //set name
       const contentDiv = document.getElementById("name");
-      console.log(contentDiv);
       contentDiv.innerHTML = UserName;
 
       //set level
       const contentDiv2 = document.getElementById("level");
-      console.log(contentDiv2);
       contentDiv2.innerHTML = "level: " + level;
+
+      //set headimg
+      const contentDiv3 = document.getElementById("headimg");
+      contentDiv3.style.backgroundImage =
+        "url(https://enka.network/ui/" + UserHeadImg + ".png)";
     });
   },
 });

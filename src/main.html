@@ -2,22 +2,20 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <!-- https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP -->
-    <script
-      src="https://kit.fontawesome.com/3b3999f4ab.js"
-      crossorigin="anonymous"
-    ></script>
     <title>Genshin-Init</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="http://at.alicdn.com/t/c/font_3672830_tibwxaf01mc.css"
+    />
   </head>
   <body>
     <!--主页面-->
     <div id="content"></div>
     <!--侧边栏-->
     <div id="sidebar">
-      <div id="tooltip-init" class="tooltip" onclick="loadPage('init')"></div>
       <button class="circle-button" id="init-btn" onclick="loadPage('init')">
-        <i class="fa-solid fa-house"></i>
+        <i class="iconfont icon-home"></i>
       </button>
       <div
         id="tooltip-char"
@@ -29,8 +27,11 @@
         id="char-btn"
         onclick="loadPage('character')"
       >
-        <i class="fa-solid fa-bars"></i>
+        <i class="iconfont icon-bars"></i>
       </button>
+      <!-- 气泡框 -->
+      <div id="tooltip-init" class="tooltip"></div>
+      <div id="tooltip-char" class="tooltip"></div>
     </div>
 
     <script>

@@ -94,7 +94,7 @@ body {
   background-color: #f0f0f0;
   border-radius: 50%;
   margin-right: 10px;
-  /* background-image: url("../img/head.jpg"); */
+  background-size: cover;
 }
 
 .name {
@@ -105,11 +105,16 @@ body {
 }
 
 .uid {
-  padding: 5px;
+  position: absolute;
+  left: 314px;
+  bottom: 16px;
+  padding: 9px;
   border: 1px solid #ccc;
   border-radius: 10px;
   margin-left: 44px; /* 将左边的空间推向右边，实现水平居中 */
   margin-right: 10px;
+  font-family: "genshin";
+  font-size: 14px;
 }
 
 .level {

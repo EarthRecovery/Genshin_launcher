@@ -31,9 +31,20 @@
   margin-bottom: 80px; /* 按钮之间的间距 */
 }
 
+#tooltip-init {
+  position: absolute;
+  top: 205px;
+  right: 55px;
+}
+
+#tooltip-char {
+  position: absolute;
+  top: 314px;
+  right: 55px;
+}
+
 /* 气泡 */
 .tooltip {
-  position: relative;
   display: none;
   background-color: #333;
   color: #fff;
@@ -44,7 +55,7 @@
 }
 
 /* 气泡框 */
-.tooltip::before {
+/* .tooltip::before {
   content: "";
   font-family: "genshin";
   position: absolute;
@@ -52,6 +63,10 @@
   border-width: 8px 8px 0;
   border-color: #333 transparent transparent transparent;
   bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: -50%;
+  transform: translateY(-50%);
+} */
+
+.icon-home {
+  font-size: 18px !important;
 }
