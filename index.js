@@ -5,6 +5,8 @@ const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
 const url = require("url");
 const fs = require("fs");
+const { Wrapper } = require("enkanetwork.js");
+const iconv = require("iconv-lite");
 
 const createWindow = () => {
   // 创建浏览窗口
@@ -29,6 +31,36 @@ const createWindow = () => {
 
     // Send the page content back to the renderer process
     event.reply("load-page-reply", pageContent);
+  });
+
+  //uid处理
+  ipcMain.on("send-uid", (event, uid) => {
+    const client = new Wrapper();
+
+    function bufferToUrlEncoded(buffer) {
+      const hexArray = Array.from(buffer).map((byte) =>
+        byte.toString(16).padStart(2, "0")
+      );
+      const encodedString = hexArray.map((hex) => `%${hex}`).join("");
+      return encodedString;
+    }
+
+    client
+      .getPlayer(uid)
+      .then((UserInfo) => {
+        //getName
+        UserNameGBK = UserInfo.player.username;
+        buffer = iconv.encode(UserNameGBK, "utf-8");
+        URI = bufferToUrlEncoded(buffer);
+        username = decodeURIComponent(URI);
+
+        //getLevel
+        level = UserInfo.player.levels.rank;
+        event.reply("sendUsername", username, level);
+      })
+      .catch((error) => {
+        console.error("Error fetching user data:", error);
+      });
   });
 
   // mainWindow.webContents.openDevTools()

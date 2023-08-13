@@ -68,6 +68,22 @@
         charTooltip.style.display = "none";
         charTooltip.textContent = "";
       });
+
+      //init.html
+      // 延迟一段时间等待元素渲染
+      setTimeout(() => {
+        const inputField = document.getElementById("uid");
+
+        // 监听输入框的键盘按下事件
+        inputField.addEventListener("keydown", (event) => {
+          if (event.key === "Enter") {
+            console.log("Enter key pressed");
+            const inputText = inputField.value;
+            myAPI.sendUID(inputText);
+            myAPI.getUsername();
+          }
+        });
+      }, 100); // 延迟 100 毫秒（根据需要调整延迟时间）
     </script>
 
     <style>

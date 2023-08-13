@@ -5,11 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "genshin": "node test.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "electron": "^25.4.0"
+  },
+  "dependencies": {
+    "@genshin-kit/core": "^2.6.2",
+    "axios": "^1.4.0",
+    "enkanetwork.js": "^2.1.9",
+    "iconv-lite": "^0.6.3"
   }
 }
