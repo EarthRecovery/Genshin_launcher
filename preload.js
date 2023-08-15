@@ -30,4 +30,15 @@ contextBridge.exposeInMainWorld("myAPI", {
         "url(https://enka.network/ui/" + UserHeadImg + ".png)";
     });
   },
+  //原神启动
+  openGame: () => {
+    const gameOpenBtn = document.getElementById("gameOpenBtn");
+    const gamePath =
+      // "C:\\Users\\earth_recovery\\Desktop\\Games\\YuanShen.exe.lnk";
+      // "C:\\Users\\earth_recovery\\Desktop\\0dcloud.lnk";
+      "D:\\Genshin\\Genshin Impact\\Genshin Impact Game\\YuanShen.exe";
+    gameOpenBtn.addEventListener("click", () => {
+      ipcRenderer.send("open-game", gamePath);
+    });
+  },
 });

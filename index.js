@@ -7,6 +7,7 @@ const url = require("url");
 const fs = require("fs");
 const { Wrapper } = require("enkanetwork.js");
 const iconv = require("iconv-lite");
+const { spawn } = require("child_process");
 
 const createWindow = () => {
   // 创建浏览窗口
@@ -45,6 +46,7 @@ const createWindow = () => {
       return encodedString;
     }
 
+    //主页面底部
     client
       .getPlayer(uid)
       .then((UserInfo) => {
@@ -66,7 +68,23 @@ const createWindow = () => {
       });
   });
 
-  // mainWindow.webContents.openDevTools()
+  //实现打开原神游戏功能
+  ipcMain.on("open-game", (event, gamePath) => {
+    //打开原神游戏
+    //const gamePath = "C:\\Program Files\\Genshin Impact\\Genshin Impact Game\\GenshinImpact.exe";
+    const childProcess = spawn(gamePath, [], {
+      shell: false,
+      detached: true,
+      // stdio: "ignore",
+    });
+
+    childProcess.unref();
+    console.log("game opened");
+
+    childProcess.on("error", (err) => {
+      console.error("Spawn error:", err);
+    });
+  });
 };
 
 // 这段程序将会在 Electron 结束初始化
