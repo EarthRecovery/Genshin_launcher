@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "genshin";
+  src: url(../fonts/hk4e_zh-cn.ttf);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#scrollBar {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  width: 900px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-size: cover;
+}
+
+#c1 {
+  margin-left: 60px;
+}
+
+#c8 {
+  margin-right: 60px;
+}

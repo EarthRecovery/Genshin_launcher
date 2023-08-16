@@ -1,0 +1,14 @@
+.playground {
+  width: 800px;
+  height: 400px;
+}
+
+.central_area {
+  width: 500px;
+  height: 200px;
+  /*水平方向居中显示*/
+  margin: 100px auto;
+  background: #6f9b3a;
+  /*关键代码，将操场变换为椭圆形*/
+  border-radius: 200px;
+}

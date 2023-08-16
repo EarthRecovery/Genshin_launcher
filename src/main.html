@@ -42,6 +42,16 @@
       function loadPage(page) {
         myAPI.sendToMain("load-page", page);
         myAPI.addToContent();
+        if (page == "init") {
+          myAPI.sendUID(-1);
+          myAPI.getUsername();
+        }
+        if (page == "character") {
+          setTimeout(() => {
+            myAPI.askForCharactersHeadImg();
+            myAPI.setCharactersHeadImg();
+          }, 100);
+        }
       }
 
       const initBtn = document.getElementById("init-btn");
@@ -78,8 +88,8 @@
         // 监听输入框的键盘按下事件
         inputField.addEventListener("keydown", (event) => {
           if (event.key === "Enter") {
-            console.log("Enter key pressed");
             const inputText = inputField.value;
+            //设置主页下菜单
             myAPI.sendUID(inputText);
             myAPI.getUsername();
           }

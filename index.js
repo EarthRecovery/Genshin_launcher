@@ -34,8 +34,33 @@ const createWindow = () => {
     event.reply("load-page-reply", pageContent);
   });
 
+  //uid
+  var SuperUid = 0;
+  //charactorHeadImgArray
+  var cHIA = [];
+  //username
+  var SuperUserName = "";
+  //level
+  var SuperLevel = 0;
+  //UserHeadImg
+  var SuperUserHeadImg = "";
+
   //uid处理
   ipcMain.on("send-uid", (event, uid) => {
+    //存储uid,判断是否为初次登陆
+    if (uid != -1) {
+      SuperUid = uid;
+      console.log("1");
+    } else {
+      if (SuperUid == 0) {
+        event.reply("sendUser", "name", 0, "");
+        console.log("2");
+      } else {
+        event.reply("sendUser", SuperUserName, SuperLevel, SuperUserHeadImg);
+        console.log("3");
+      }
+      return;
+    }
     const client = new Wrapper();
 
     function bufferToUrlEncoded(buffer) {
@@ -55,17 +80,39 @@ const createWindow = () => {
         buffer = iconv.encode(UserNameGBK, "utf-8");
         URI = bufferToUrlEncoded(buffer);
         username = decodeURIComponent(URI);
+        SuperUserName = username;
 
         //getLevel
         level = UserInfo.player.levels.rank;
+        SuperLevel = level;
 
         //getHeadImg
         UserHeadImg = UserInfo.player.profilePicture.assets.icon;
+        SuperUserHeadImg = UserHeadImg;
         event.reply("sendUser", username, level, UserHeadImg);
+
+        //获取8个角色头像
+        for (var i = 0; i < 8; i++) {
+          cHIA.push(UserInfo.characters[i].assets.icon);
+        }
       })
       .catch((error) => {
         console.error("Error fetching user data:", error);
       });
+  });
+
+  ipcMain.on("askForCharactorsHeadImg", (event) => {
+    event.reply(
+      "sendCharactorsHeadImg",
+      cHIA[0],
+      cHIA[1],
+      cHIA[2],
+      cHIA[3],
+      cHIA[4],
+      cHIA[5],
+      cHIA[6],
+      cHIA[7]
+    );
   });
 
   //实现打开原神游戏功能
