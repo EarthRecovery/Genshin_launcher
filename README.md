@@ -1,5 +1,6 @@
-# Genshin_initiator 原神，启动！
+# Genshin_launcher 原神，启动！
 
+### 原神启动器--Powered by Lyx
 我将在50个工作日内完成这个项目
 
 包含
