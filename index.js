@@ -44,23 +44,23 @@ const createWindow = () => {
   var SuperLevel = 0;
   //UserHeadImg
   var SuperUserHeadImg = "";
+  //charactersCard
+  var SuperCharactersCardArray = [];
 
   //uid处理
   ipcMain.on("send-uid", (event, uid) => {
     //存储uid,判断是否为初次登陆
     if (uid != -1) {
       SuperUid = uid;
-      console.log("1");
     } else {
       if (SuperUid == 0) {
         event.reply("sendUser", "name", 0, "");
-        console.log("2");
       } else {
         event.reply("sendUser", SuperUserName, SuperLevel, SuperUserHeadImg);
-        console.log("3");
       }
       return;
     }
+
     const client = new Wrapper();
 
     function bufferToUrlEncoded(buffer) {
@@ -95,6 +95,10 @@ const createWindow = () => {
         for (var i = 0; i < 8; i++) {
           cHIA.push(UserInfo.characters[i].assets.icon);
         }
+        //获取角色卡片信息
+        for (var i = 0; i < 8; i++) {
+          SuperCharactersCardArray.push(UserInfo.characters[i]);
+        }
       })
       .catch((error) => {
         console.error("Error fetching user data:", error);
@@ -113,6 +117,11 @@ const createWindow = () => {
       cHIA[6],
       cHIA[7]
     );
+  });
+
+  //返回角色卡片信息
+  ipcMain.on("askForCharacterCards", (event, index) => {
+    event.reply("sendCharacterCards", SuperCharactersCardArray[index]);
   });
 
   //实现打开原神游戏功能

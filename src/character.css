@@ -17,18 +17,19 @@ body {
   width: 900px;
   height: 50px;
   border-radius: 50px;
-  background-color: #fff;
+  background-color: #bcaadf;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   padding: 10px;
 }
 
 .circle {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   background-size: cover;
 }
 
@@ -38,4 +39,15 @@ body {
 
 #c8 {
   margin-right: 60px;
+}
+
+#characterCard {
+  position: absolute;
+  top: 180px;
+  left: 150px;
+  width: 900px;
+  height: 450px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: #bcaadf;
 }

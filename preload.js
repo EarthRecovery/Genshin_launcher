@@ -77,4 +77,14 @@ contextBridge.exposeInMainWorld("myAPI", {
       }
     );
   },
+  //请求发送角色卡片
+  askForCharacterCards: (i) => {
+    ipcRenderer.send("askForCharacterCards", i);
+  },
+  //接受角色卡片信息
+  sendCharacterCards: () => {
+    ipcRenderer.on("sendCharacterCards", (event, CharacterCards) => {
+      console.log(CharacterCards.constellationsList[0].assets);
+    });
+  },
 });

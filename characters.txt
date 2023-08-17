@@ -1,0 +1,120 @@
+Characters {
+  characterId: 10000037,
+  properties: Properties {
+    xp: PropertyContent { type: 1001, val: '' },
+    ascension: PropertyContent { type: 1002, val: '6' },
+    level: PropertyContent { type: 4001, val: '90' },
+    stamina: PropertyContent { type: 10010, val: '23200' }
+  },
+  stats: Stats {
+    baseHp: Stat { value: 9796.7294921875 },
+    hpPercentage: StatPercentage { value: 0.05249999836087227 },   
+    baseAtk: Stat { value: 942.9243774414062 },
+    atkPercentage: StatPercentage { value: 0.9918000102043152 },   
+    baseDef: Stat { value: 630.214599609375 },
+    defPercentage: StatPercentage { value: '0' },
+    critRate: StatPercentage { value: 0.5904000401496887 },        
+    critDamage: StatPercentage { value: 2.019536018371582 },       
+    energyRecharge: StatPercentage { value: 1.2202000617980957 },  
+    healingBonus: StatPercentage { value: '0' },
+    incomingHealingBonus: StatPercentage { value: '0' },
+    elementalMastery: Stat { value: 119.62999725341797 },
+    physicalRes: StatPercentage { value: '0' },
+    physicalDamageBonus: StatPercentage { value: '0' },
+    pyroDamageBonus: StatPercentage { value: '0' },
+    electroDamageBonus: StatPercentage { value: '0' },
+    hydroDamageBonus: StatPercentage { value: '0' },
+    dendroDamageBonus: StatPercentage { value: '0' },
+    anemoDamageBonus: StatPercentage { value: '0' },
+    geoDamageBonus: StatPercentage { value: '0' },
+    cryoDamageBonus: StatPercentage { value: 0.4659999907016754 }, 
+    pyroRes: StatPercentage { value: '0' },
+    electroRes: StatPercentage { value: '0' },
+    hydroRes: StatPercentage { value: '0' },
+    dendroRes: StatPercentage { value: '0' },
+    anemoRes: StatPercentage { value: '0' },
+    geoRes: StatPercentage { value: '0' },
+    cryoRes: StatPercentage { value: '0' },
+    pyroEnergyCost: Stat { value: '' },
+    electroEnergyCost: Stat { value: '' },
+    hydroEnergyCost: Stat { value: '' },
+    dendroEnergyCost: Stat { value: '' },
+    anemoEnergyCost: Stat { value: '' },
+    cryoEnergyCost: Stat { value: 60 },
+    geoEnergyCost: Stat { value: '' },
+    cooldownReduction: StatPercentage { value: '0' },
+    shieldStrength: StatPercentage { value: '0' },
+    currentPyroEnergy: Stat { value: '' },
+    currentElectroEnergy: Stat { value: '' },
+    currentHydroEnergy: Stat { value: '' },
+    currentDendroEnergy: Stat { value: '' },
+    currentAnemoEnergy: Stat { value: '' },
+    currentCryoEnergy: Stat { value: 60 },
+    currentGeoEnergy: Stat { value: '' },
+    currentHp: Stat { value: 16913.45703125 },
+    maxHp: Stat { value: 16913.45703125 },
+    atk: Stat { value: 2202.73681640625 },
+    def: Stat { value: 725.1146240234375 }
+  },
+  constellationsList: [],
+  skillDepotId: 3701,
+  inherentProudSkillList: [ 372101, 372201, 372301 ],
+  skills: Skills {
+    normalAttacks: Skill {
+      level: 10,
+      id: 10371,
+      assets: [SkillImages],
+      name: 'Normal Attack: Liutian Archery'
+    },
+    elementalSkill: Skill {
+      level: 6,
+      id: 10372,
+      assets: [SkillImages],
+      name: 'Trail of the Qilin'
+    },
+    elementalBurst: Skill {
+      level: 8,
+      id: 10373,
+      assets: [SkillImages],
+      name: 'Celestial Shower'
+    }
+  },
+  skillsExtraLevel: {},
+  equipment: Equipment {
+    artifacts: [ [Artifact], [Artifact], [Artifact], [Artifact], [Artifact] ],
+    weapon: Weapon {
+      weaponId: 15509,
+      level: 90,
+      ascensionLevel: 6,
+      refinement: [Refinement],
+      nameTextMapHash: '2918525947',
+      stars: 5,
+      weaponStats: [Array],
+      itemType: 'ITEM_WEAPON',
+      assets: [WeaponImages],
+      name: 'Thundering Pulse'
+    }
+  },
+  friendship: Friendship { level: 10 },
+  assets: CharacterImages {
+    icon: 'UI_AvatarIcon_Ganyu',
+    sideIcon: 'UI_AvatarIcon_Side_Ganyu',
+    gachaIcon: 'UI_Gacha_AvatarImg_Ganyu',
+    constellations: [
+      'UI_Talent_S_Ganyu_01',
+      'UI_Talent_S_Ganyu_02',
+      'UI_Talent_U_Ganyu_01',
+      'UI_Talent_S_Ganyu_03',
+      'UI_Talent_U_Ganyu_02',
+      'UI_Talent_S_Ganyu_04'
+    ],
+    talents: CharacterSkillIcons {
+      normalAttack: 'Skill_A_02',
+      elementalSkill: 'Skill_S_Ganyu_01',
+      elementalBurst: 'Skill_E_Ganyu_01'
+    },
+    costumes: []
+  },
+  costumeId: '',
+  name: 'Ganyu'
+}
