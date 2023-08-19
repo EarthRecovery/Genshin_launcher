@@ -30,7 +30,9 @@ body {
   height: 50px;
   border-radius: 50%;
   /* border: 1px solid #000; */
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 63px;
+  background-position: top -14px right -7px;
 }
 
 #c1 {

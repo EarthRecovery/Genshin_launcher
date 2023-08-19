@@ -38,6 +38,10 @@
       //在一开始就加载主界面
       myAPI.sendToMain("load-page", "init");
       myAPI.addToContent();
+      //持久化进程
+      //-100表示持久化
+      myAPI.sendUID(-100);
+      myAPI.getUsername();
       // 向主进程传递文件
       function loadPage(page) {
         myAPI.sendToMain("load-page", page);

@@ -21,19 +21,6 @@ const createWindow = () => {
     },
   });
 
-  // 加载 index.html
-  mainWindow.loadFile("./src/main.html");
-
-  // 打开开发工具
-  // Handle button clicks
-  ipcMain.on("load-page", (event, page) => {
-    // Read the content of the requested HTML file
-    const pageContent = fs.readFileSync(`./src/${page}.html`, "utf-8");
-
-    // Send the page content back to the renderer process
-    event.reply("load-page-reply", pageContent);
-  });
-
   //uid
   var SuperUid = 0;
   //charactorHeadImgArray
@@ -45,10 +32,73 @@ const createWindow = () => {
   //UserHeadImg
   var SuperUserHeadImg = "";
   //charactersCard
-  var SuperCharactersCardArray = [];
+  var SuperCharactersCardArray;
 
+  // 加载 index.html
+  mainWindow.loadFile("./src/main.html");
+
+  // 打开开发工具
+  // Handle button clicks
+  ipcMain.on("load-page", (event, page) => {
+    // Read the content of the requested HTML file
+    const pageContent = fs.readFileSync(`./src/${page}.html`, "utf-8");
+
+    // Send the page content back to the renderer process
+    event.reply("load-page-reply", pageContent);
+
+    //数据持久化操作
+    fs.readFile("./src/cache.json", "utf8", (err, data) => {
+      if (err) {
+        console.error("Error reading JSON file:", err);
+        return;
+      }
+      try {
+        const JSONdata = JSON.parse(data);
+        if (JSONdata.uid != 0) {
+          SuperUid = JSONdata.uid;
+          SuperUserName = JSONdata.name;
+          SuperLevel = JSONdata.lv;
+          SuperUserHeadImg = JSONdata.userHeadImg;
+          cHIA = JSONdata.cHIA;
+          SuperCharactersCardArray = JSONdata.charactersInfo;
+        }
+      } catch (parseError) {
+        console.error("Error parsing JSON:", parseError);
+      }
+    });
+  });
   //uid处理
   ipcMain.on("send-uid", (event, uid) => {
+    //持久化
+    if (uid == -100) {
+      fs.readFile("./src/cache.json", "utf8", (err, data) => {
+        if (err) {
+          console.error("Error reading JSON file:", err);
+          return;
+        }
+        try {
+          const JSONdata = JSON.parse(data);
+          if (JSONdata.uid != 0) {
+            SuperUid = JSONdata.uid;
+            SuperUserName = JSONdata.name;
+            SuperLevel = JSONdata.lv;
+            SuperUserHeadImg = JSONdata.userHeadImg;
+            cHIA = JSONdata.cHIA;
+            SuperCharactersCardArray = JSONdata.charactersInfo;
+            event.reply(
+              "sendUser",
+              SuperUserName,
+              SuperLevel,
+              SuperUserHeadImg
+            );
+          }
+        } catch (parseError) {
+          console.error("Error parsing JSON:", parseError);
+        }
+      });
+
+      return;
+    }
     //存储uid,判断是否为初次登陆
     if (uid != -1) {
       SuperUid = uid;
@@ -87,7 +137,7 @@ const createWindow = () => {
         SuperLevel = level;
 
         //getHeadImg
-        UserHeadImg = UserInfo.player.profilePicture.assets.icon;
+        UserHeadImg = UserInfo.player.profilePicture.assets.sideIcon;
         SuperUserHeadImg = UserHeadImg;
         event.reply("sendUser", username, level, UserHeadImg);
 
@@ -99,6 +149,28 @@ const createWindow = () => {
         for (var i = 0; i < 8; i++) {
           SuperCharactersCardArray.push(UserInfo.characters[i]);
         }
+
+        //持久化信息
+        const cacheJSON = {
+          uid: uid,
+          name: username,
+          userHeadImg: UserHeadImg,
+          lv: level,
+          cHIA: cHIA,
+          charactersInfo: SuperCharactersCardArray,
+        };
+
+        // 将JSON数据转换为字符串
+        const jsonString = JSON.stringify(jsonData, null, 2);
+
+        // 将字符串写入文件
+        fs.writeFile("./src/cache.json", jsonString, "utf8", (err) => {
+          if (err) {
+            console.error("Error writing JSON file:", err);
+          } else {
+            console.log("JSON data has been written to data.json");
+          }
+        });
       })
       .catch((error) => {
         console.error("Error fetching user data:", error);

@@ -34,3 +34,28 @@ client
 // childProcess.on("error", (err) => {
 //   console.error("Spawn error:", err);
 // });
+
+// const fs = require("fs");
+
+// // 读取本地JSON文件
+// fs.readFile("./src/cache.json", "utf8", (err, data) => {
+//   if (err) {
+//     console.error("Error reading JSON file:", err);
+//     return;
+//   }
+//   try {
+//     const data = JSON.parse(data);
+//     if (data.uid != 0) {
+//       SuperUid = data.uid;
+//       SuperUserName = data.name;
+//       SuperLevel = data.lv;
+//       SuperUserHeadImg = data.userHeadImg;
+//       cHIA = data.cHIA;
+//       SuperCharactersCardArray = data.charactersInfo;
+//       //test
+//       console.log(SuperCharactersCardArray);
+//     }
+//   } catch (parseError) {
+//     console.error("Error parsing JSON:", parseError);
+//   }
+// });

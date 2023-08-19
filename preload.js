@@ -17,6 +17,7 @@ contextBridge.exposeInMainWorld("myAPI", {
   getUsername: () => {
     ipcRenderer.on("sendUser", (event, UserName, level, UserHeadImg) => {
       //set name
+      console.log(UserName);
       const contentDiv = document.getElementById("name");
       contentDiv.innerHTML = UserName;
 
@@ -84,7 +85,7 @@ contextBridge.exposeInMainWorld("myAPI", {
   //接受角色卡片信息
   sendCharacterCards: () => {
     ipcRenderer.on("sendCharacterCards", (event, CharacterCards) => {
-      console.log(CharacterCards.constellationsList[0].assets);
+      // console.log(CharacterCards.constellationsList[0].assets);
     });
   },
 });
