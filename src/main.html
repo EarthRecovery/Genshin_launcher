@@ -72,6 +72,9 @@
           setTimeout(() => {
             myAPI.askForCharactersHeadImg();
             myAPI.setCharactersHeadImg();
+            //一出场就加载第一个界面
+            myAPI.askForCharacterCards(0);
+            myAPI.CardRender();
           }, 100);
         }
       }
@@ -119,13 +122,25 @@
 
         //打开原神
         myAPI.openGame();
-      }, 100); // 延迟 100 毫秒（根据需要调整延迟时间）
+      }, 100); // 延迟 100 毫秒
 
       //角色卡片处理
       function loadcard(i) {
         myAPI.askForCharacterCards(i);
-        myAPI.sendCharacterCards();
+        myAPI.CardRender();
       }
+
+      //character.html渲染
+      setTimeout(() => {
+        btns = document.getElementsByClassName("circle");
+
+        for (let i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", () => {
+            myAPI.askForCharacterCards(i);
+            myAPI.CardRender();
+          });
+        }
+      }, 100); // 延迟 100 毫秒
     </script>
 
     <style>

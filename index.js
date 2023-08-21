@@ -21,6 +21,9 @@ const createWindow = () => {
     },
   });
 
+  /**
+   * 以下为全局变量，用于数据持久化
+   */
   //uid
   var SuperUid = 0;
   //charactorHeadImgArray
@@ -32,12 +35,14 @@ const createWindow = () => {
   //UserHeadImg
   var SuperUserHeadImg = "";
   //charactersCard
-  var SuperCharactersCardArray;
+  var SuperCharactersCardArray = [];
 
   // 加载 index.html
   mainWindow.loadFile("./src/main.html");
 
-  // 打开开发工具
+  /**
+   * 每次加载页面都尝试读取cache
+   */
   // Handle button clicks
   ipcMain.on("load-page", (event, page) => {
     // Read the content of the requested HTML file
@@ -50,6 +55,9 @@ const createWindow = () => {
     fs.readFile("./src/cache.json", "utf8", (err, data) => {
       if (err) {
         console.error("Error reading JSON file:", err);
+        return;
+      }
+      if (data == "") {
         return;
       }
       try {
@@ -67,13 +75,19 @@ const createWindow = () => {
       }
     });
   });
-  //uid处理
+
+  /**
+   * 按下enter键后，更新cache
+   */
   ipcMain.on("send-uid", (event, uid) => {
     //持久化
     if (uid == -100) {
       fs.readFile("./src/cache.json", "utf8", (err, data) => {
         if (err) {
           console.error("Error reading JSON file:", err);
+          return;
+        }
+        if (data == "") {
           return;
         }
         try {
@@ -111,7 +125,9 @@ const createWindow = () => {
       return;
     }
 
-    const client = new Wrapper();
+    const client = new Wrapper({
+      language: "zh-CN",
+    });
 
     function bufferToUrlEncoded(buffer) {
       const hexArray = Array.from(buffer).map((byte) =>
@@ -121,7 +137,9 @@ const createWindow = () => {
       return encodedString;
     }
 
-    //主页面底部
+    /**
+     * 获取api信息，填充以及持久化操作
+     */
     client
       .getPlayer(uid)
       .then((UserInfo) => {
@@ -137,15 +155,17 @@ const createWindow = () => {
         SuperLevel = level;
 
         //getHeadImg
-        UserHeadImg = UserInfo.player.profilePicture.assets.sideIcon;
+        UserHeadImg = UserInfo.player.profilePicture.assets.icon;
         SuperUserHeadImg = UserHeadImg;
         event.reply("sendUser", username, level, UserHeadImg);
 
         //获取8个角色头像
+        cHIA = [];
         for (var i = 0; i < 8; i++) {
-          cHIA.push(UserInfo.characters[i].assets.icon);
+          cHIA.push(UserInfo.characters[i].assets.sideIcon);
         }
         //获取角色卡片信息
+        SuperCharactersCardArray = [];
         for (var i = 0; i < 8; i++) {
           SuperCharactersCardArray.push(UserInfo.characters[i]);
         }
@@ -161,9 +181,22 @@ const createWindow = () => {
         };
 
         // 将JSON数据转换为字符串
-        const jsonString = JSON.stringify(jsonData, null, 2);
+        const jsonString = JSON.stringify(cacheJSON, null, 2);
 
-        // 将字符串写入文件
+        /**
+         * 将cache写入文件
+         */
+        //将原来的cache.json清空
+        // 使用空字符串来清空文件内容
+        fs.writeFile("./src/cache.json", "", (err) => {
+          if (err) {
+            console.error("Error clearing file:", err);
+          } else {
+            console.log("File cleared successfully.");
+          }
+        });
+
+        // 将字符串写入文件;
         fs.writeFile("./src/cache.json", jsonString, "utf8", (err) => {
           if (err) {
             console.error("Error writing JSON file:", err);

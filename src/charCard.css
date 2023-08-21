@@ -14,14 +14,6 @@
   display: flex;
   overflow: hidden;
   background-color: #fff;
-  background-image: linear-gradient(
-      to right,
-      rgba(157, 157, 157, 0),
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
-    ),
-    url("https://enka.network/ui/UI_Gacha_AvatarImg_Ganyu.png"),
-    url("./assets/cryo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right 0px bottom 0px, right 180px bottom -30px;
@@ -33,13 +25,20 @@
   padding: 29.25px;
 }
 #name {
+  position: absolute;
+  left: 27px;
+  top: 25px;
   font-size: 25px;
+}
+#lv {
+  position: relative;
+  top: 28px;
 }
 #constellations {
   background-color: #ffffff00;
   height: 280px;
   width: 60%;
-  margin-top: 73px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -51,24 +50,6 @@
   margin: 10px 0; /* 控制圆圈之间的间距 */
   background-repeat: no-repeat;
   background-size: cover;
-}
-#cs1 {
-  background-image: url("https://enka.network/ui/UI_Talent_S_Ganyu_01.png");
-}
-#cs2 {
-  background-image: url("https://enka.network/ui/UI_Talent_S_Ganyu_02.png");
-}
-#cs3 {
-  background-image: url("https://enka.network/ui/UI_Talent_U_Ganyu_01.png");
-}
-#cs4 {
-  background-image: url("https://enka.network/ui/UI_Talent_S_Ganyu_03.png");
-}
-#cs5 {
-  background-image: url("https://enka.network/ui/UI_Talent_U_Ganyu_02.png");
-}
-#cs6 {
-  background-image: url("https://enka.network/ui/UI_Talent_S_Ganyu_04.png");
 }
 
 /* 技能栏 */
@@ -97,15 +78,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-#sk1 {
-  background-image: url("https://enka.network/ui/Skill_A_02.png");
-}
-#sk2 {
-  background-image: url("https://enka.network/ui/Skill_S_Ganyu_01.png");
-}
-#sk3 {
-  background-image: url("https://enka.network/ui/Skill_E_Ganyu_01.png");
-}
 .skillWord {
   position: relative;
   left: 16px;
@@ -120,28 +92,23 @@
   flex-direction: column;
 }
 #weapon-info {
-  /* background-color: #ffffff; */
   width: 209px;
   height: 110px;
 }
 #weapon-img {
-  position: relative;
-  /* background-color: #ff7070; */
   width: 87px;
   height: 87px;
-  top: 10px;
-  left: 0px;
-  background-image: url("https://enka.network/ui/UI_EquipIcon_Pole_Proto.png");
+  top: 26px;
+  left: 581px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #weapon-stats {
-  position: relative;
-  /* background-color: #ff7070; */
+  position: absolute;
   width: 177px;
   height: 80px;
-  top: -66px;
-  left: 126px;
+  top: 13px;
+  left: 579px;
   padding-left: 10px;
 }
 #stats {
@@ -168,12 +135,11 @@
 }
 .statsNum {
   position: absolute;
-  right: 203px;
+  right: 234px;
 }
 
 /* 圣遗物栏 */
 #artifact {
-  /* background-color: #ffd700; */
   padding: 12.5px;
   padding-top: 35px;
   padding-bottom: 10px;
@@ -193,25 +159,9 @@
   position: relative;
   width: 65px;
   height: 65px;
-  /* background-color: #fff; */
   background-repeat: no-repeat;
   background-size: 100px;
   background-position: right -10px bottom -25px;
-}
-#arti1 {
-  background-image: url("https://enka.network/ui/UI_RelicIcon_15020_4.png");
-}
-#arti2 {
-  background-image: url("https://enka.network/ui/UI_RelicIcon_15020_2.png");
-}
-#arti3 {
-  background-image: url("https://enka.network/ui/UI_RelicIcon_15026_5.png");
-}
-#arti4 {
-  background-image: url("https://enka.network/ui/UI_RelicIcon_15020_1.png");
-}
-#arti5 {
-  background-image: url("https://enka.network/ui/UI_RelicIcon_15020_3.png");
 }
 .artiNum {
   position: relative;

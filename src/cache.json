@@ -1,1943 +1,3986 @@
 {
-  "uid": 148196994,
+  "uid": "148196994",
   "name": "智慧",
   "userHeadImg": "UI_AvatarIcon_Lisa",
-  "lv": 50,
+  "lv": 56,
   "cHIA": [
-    "UI_AvatarIcon_Side_Lisa",
-    "UI_AvatarIcon_Side_Ambor",
-    "UI_AvatarIcon_Side_Ganyu",
-    "UI_AvatarIcon_Side_Xiao",
+    "UI_AvatarIcon_Side_Xiangling",
     "UI_AvatarIcon_Side_Zhongli",
+    "UI_AvatarIcon_Side_Ganyu",
+    "UI_AvatarIcon_Side_Kazuha",
     "UI_AvatarIcon_Side_Keqing",
-    "UI_AvatarIcon_Side_Ningguang",
-    "UI_AvatarIcon_Side_Hutao"
+    "UI_AvatarIcon_Side_Ayato",
+    "UI_AvatarIcon_Side_Xingqiu",
+    "UI_AvatarIcon_Side_Bennett"
   ],
   "charactersInfo": [
     {
-      "avatarId": 10000023,
-      "propMap": {
-        "1001": { "type": 1001, "ival": "46112", "val": "46112" },
-        "1002": { "type": 1002, "ival": "6", "val": "6" },
-        "1003": { "type": 1003, "ival": "0" },
-        "1004": { "type": 1004, "ival": "0" },
-        "4001": { "type": 4001, "ival": "80", "val": "80" },
-        "10010": { "type": 10010, "ival": "23200", "val": "23200" },
-        "10049": { "type": 10049, "ival": "12000", "val": "12000" }
+      "characterId": 10000023,
+      "properties": {
+        "xp": {
+          "type": 1001,
+          "val": "46569"
+        },
+        "ascension": {
+          "type": 1002,
+          "val": "6"
+        },
+        "level": {
+          "type": 4001,
+          "val": "80"
+        },
+        "stamina": {
+          "type": 10010,
+          "val": "23200"
+        }
       },
-      "talentIdList": [231, 232, 233, 234, 235, 236],
-      "fightPropMap": {
-        "1": 10121.775390625,
-        "2": 5377.5,
-        "3": 0.04659999907016754,
-        "4": 658.2318115234375,
-        "5": 395.4200134277344,
-        "6": 0.2565000057220459,
-        "7": 622.548583984375,
-        "8": 113.41999816894531,
-        "9": 0.16910000145435333,
-        "20": 0.39989998936653137,
-        "21": 0,
-        "22": 0.8418999910354614,
-        "23": 2.2302000522613525,
-        "26": 0,
-        "27": 0,
-        "28": 276.42999267578125,
-        "29": 0,
-        "30": 0,
-        "40": 0.3479999899864197,
-        "41": 0,
-        "42": 0,
-        "43": 0,
-        "44": 0,
-        "45": 0,
-        "46": 0,
-        "50": 0,
-        "51": 0,
-        "52": 0,
-        "53": 0,
-        "54": 0,
-        "55": 0,
-        "56": 0,
-        "70": 80,
-        "81": 0,
-        "1000": 22.302001953125,
-        "1010": 7996.60986328125,
-        "2000": 15970.9501953125,
-        "2001": 1222.48828125,
-        "2002": 841.2415771484375,
-        "2003": 0,
-        "2004": 0,
-        "2005": 0,
-        "3007": 0,
-        "3008": 0,
-        "3009": 0,
-        "3014": 0,
-        "3015": 0,
-        "3016": 0,
-        "3017": 0,
-        "3018": 0,
-        "3019": 0,
-        "3020": 0,
-        "3021": 0,
-        "3023": 0,
-        "3045": 0,
-        "3046": 1
+      "stats": {
+        "baseHp": {
+          "value": 10121.775390625
+        },
+        "hpPercentage": {
+          "value": 0.04659999907016754
+        },
+        "baseAtk": {
+          "value": 658.2318115234375
+        },
+        "atkPercentage": {
+          "value": 0.2565000057220459
+        },
+        "baseDef": {
+          "value": 622.548583984375
+        },
+        "defPercentage": {
+          "value": 0.16910000145435333
+        },
+        "critRate": {
+          "value": 0.39989998936653137
+        },
+        "critDamage": {
+          "value": 0.8418999910354614
+        },
+        "energyRecharge": {
+          "value": 2.2302000522613525
+        },
+        "healingBonus": {
+          "value": "0"
+        },
+        "incomingHealingBonus": {
+          "value": "0"
+        },
+        "elementalMastery": {
+          "value": 276.42999267578125
+        },
+        "physicalRes": {
+          "value": "0"
+        },
+        "physicalDamageBonus": {
+          "value": "0"
+        },
+        "pyroDamageBonus": {
+          "value": 0.3479999899864197
+        },
+        "electroDamageBonus": {
+          "value": "0"
+        },
+        "hydroDamageBonus": {
+          "value": "0"
+        },
+        "dendroDamageBonus": {
+          "value": "0"
+        },
+        "anemoDamageBonus": {
+          "value": "0"
+        },
+        "geoDamageBonus": {
+          "value": "0"
+        },
+        "cryoDamageBonus": {
+          "value": "0"
+        },
+        "pyroRes": {
+          "value": "0"
+        },
+        "electroRes": {
+          "value": "0"
+        },
+        "hydroRes": {
+          "value": "0"
+        },
+        "dendroRes": {
+          "value": "0"
+        },
+        "anemoRes": {
+          "value": "0"
+        },
+        "geoRes": {
+          "value": "0"
+        },
+        "cryoRes": {
+          "value": "0"
+        },
+        "pyroEnergyCost": {
+          "value": 80
+        },
+        "electroEnergyCost": {
+          "value": ""
+        },
+        "hydroEnergyCost": {
+          "value": ""
+        },
+        "dendroEnergyCost": {
+          "value": ""
+        },
+        "anemoEnergyCost": {
+          "value": ""
+        },
+        "cryoEnergyCost": {
+          "value": ""
+        },
+        "geoEnergyCost": {
+          "value": ""
+        },
+        "cooldownReduction": {
+          "value": "0"
+        },
+        "shieldStrength": {
+          "value": "0"
+        },
+        "currentPyroEnergy": {
+          "value": 80
+        },
+        "currentElectroEnergy": {
+          "value": ""
+        },
+        "currentHydroEnergy": {
+          "value": ""
+        },
+        "currentDendroEnergy": {
+          "value": ""
+        },
+        "currentAnemoEnergy": {
+          "value": ""
+        },
+        "currentCryoEnergy": {
+          "value": ""
+        },
+        "currentGeoEnergy": {
+          "value": ""
+        },
+        "currentHp": {
+          "value": 15970.9501953125
+        },
+        "maxHp": {
+          "value": 15970.9501953125
+        },
+        "atk": {
+          "value": 1222.48828125
+        },
+        "def": {
+          "value": 841.2415771484375
+        }
       },
-      "skillDepotId": 2301,
-      "inherentProudSkillList": [232101, 232201, 232301],
-      "skillLevelMap": { "10231": 1, "10232": 8, "10235": 9 },
-      "proudSkillExtraLevelMap": { "2332": 3, "2339": 3 },
-      "equipList": [
+      "constellationsList": [
         {
-          "itemId": 94543,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 14001,
-            "appendPropIdList": [
-              501054, 501223, 501082, 501061, 501224, 501064, 501224, 501054
-            ]
+          "id": 231,
+          "name": "外酥里嫩",
+          "assets": {
+            "icon": "UI_Talent_S_Xiangling_01"
+          }
+        },
+        {
+          "id": 232,
+          "name": "大火宽油",
+          "assets": {
+            "icon": "UI_Talent_S_Xiangling_02"
+          }
+        },
+        {
+          "id": 233,
+          "name": "武火急烹",
+          "assets": {
+            "icon": "UI_Talent_U_Xiangling_02"
+          }
+        },
+        {
+          "id": 234,
+          "name": "文火慢煨",
+          "assets": {
+            "icon": "UI_Talent_S_Xiangling_03"
+          }
+        },
+        {
+          "id": 235,
+          "name": "锅巴凶猛",
+          "assets": {
+            "icon": "UI_Talent_U_Xiangling_01"
+          }
+        },
+        {
+          "id": 236,
+          "name": "大龙卷旋火轮",
+          "assets": {
+            "icon": "UI_Talent_S_Xiangling_04"
+          }
+        }
+      ],
+      "skillDepotId": 2301,
+      "inherentProudSkillList": [
+        232101,
+        232201,
+        232301
+      ],
+      "skills": {
+        "normalAttacks": {
+          "level": 1,
+          "id": 10231,
+          "assets": {
+            "icon": "Skill_A_03"
           },
-          "flat": {
+          "name": "普通攻击·白案功夫"
+        },
+        "elementalSkill": {
+          "level": 8,
+          "id": 10232,
+          "assets": {
+            "icon": "Skill_S_Xiangling_01"
+          },
+          "name": "锅巴出击"
+        },
+        "elementalBurst": {
+          "level": 9,
+          "id": 10235,
+          "assets": {
+            "icon": "Skill_E_Xiangling_01"
+          },
+          "name": "旋火轮"
+        }
+      },
+      "skillsExtraLevel": {
+        "2332": 3,
+        "2339": 3
+      },
+      "equipment": {
+        "artifacts": [
+          {
+            "artifactId": 94543,
+            "level": 21,
             "nameTextMapHash": "2246743908",
             "setNameTextMapHash": "2276480763",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_HP",
-              "statValue": 4780
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_HP",
+              "statValue": 4780,
+              "id": 14001
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_ATTACK", "statValue": 39 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 22.5 },
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 19 },
-              { "appendPropId": "FIGHT_PROP_ATTACK_PERCENT", "statValue": 9.9 }
+            "substats": [
+              {
+                "stat": "FIGHT_PROP_ATTACK",
+                "statValue": 39
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 22.5
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 19
+              },
+              {
+                "stat": "FIGHT_PROP_ATTACK_PERCENT",
+                "statValue": 9.9
+              }
+            ],
+            "rolledSubstatsIds": [
+              501054,
+              501223,
+              501082,
+              501061,
+              501224,
+              501064,
+              501224,
+              501054
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15020_4",
-            "equipType": "EQUIP_BRACER"
-          }
-        },
-        {
-          "itemId": 94524,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 12001,
-            "appendPropIdList": [
-              501063, 501221, 501082, 501244, 501242, 501064, 501242, 501222,
-              501062
-            ]
+            "equipType": "EQUIP_BRACER",
+            "name": "明威之镡",
+            "setName": "绝缘之旗印"
           },
-          "flat": {
+          {
+            "artifactId": 94524,
+            "level": 21,
             "nameTextMapHash": "481604708",
             "setNameTextMapHash": "2276480763",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK",
-              "statValue": 311
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK",
+              "statValue": 311,
+              "id": 12001
             },
-            "reliquarySubstats": [
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_ATTACK_PERCENT",
+                "stat": "FIGHT_PROP_ATTACK_PERCENT",
                 "statValue": 15.7
               },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 11.7 },
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 19 },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 61 }
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 11.7
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 19
+              },
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 61
+              }
+            ],
+            "rolledSubstatsIds": [
+              501063,
+              501221,
+              501082,
+              501244,
+              501242,
+              501064,
+              501242,
+              501222,
+              501062
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15020_2",
-            "equipType": "EQUIP_NECKLACE"
-          }
-        },
-        {
-          "itemId": 21553,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 10007,
-            "appendPropIdList": [
-              501083, 501244, 501092, 501204, 501082, 501081, 501092, 501083
-            ]
+            "equipType": "EQUIP_NECKLACE",
+            "name": "切落之羽",
+            "setName": "绝缘之旗印"
           },
-          "flat": {
+          {
+            "artifactId": 21553,
+            "level": 21,
             "nameTextMapHash": "1198995532",
             "setNameTextMapHash": "4145306051",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
-              "statValue": 51.8
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
+              "statValue": 51.8,
+              "id": 10007
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 76 },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 23 },
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_DEFENSE_PERCENT",
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 76
+              },
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 23
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE_PERCENT",
                 "statValue": 11.7
               },
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 3.9 }
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 3.9
+              }
+            ],
+            "rolledSubstatsIds": [
+              501083,
+              501244,
+              501092,
+              501204,
+              501082,
+              501081,
+              501092,
+              501083
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15026_5",
-            "equipType": "EQUIP_SHOES"
-          }
-        },
-        {
-          "itemId": 94412,
-          "reliquary": {
-            "level": 17,
-            "mainPropId": 15008,
-            "appendPropIdList": [401233, 401052, 401093, 401242, 401233, 401244]
+            "equipType": "EQUIP_SHOES",
+            "name": "沉金的岁月",
+            "setName": "饰金之梦"
           },
-          "flat": {
+          {
+            "artifactId": 94412,
+            "level": 17,
             "nameTextMapHash": "4235719196",
             "setNameTextMapHash": "2276480763",
-            "rankLevel": 4,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_FIRE_ADD_HURT",
-              "statValue": 34.8
+            "stars": 4,
+            "mainstat": {
+              "stat": "FIGHT_PROP_FIRE_ADD_HURT",
+              "statValue": 34.8,
+              "id": 15008
             },
-            "reliquarySubstats": [
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 9.3
               },
-              { "appendPropId": "FIGHT_PROP_ATTACK", "statValue": 12 },
               {
-                "appendPropId": "FIGHT_PROP_DEFENSE_PERCENT",
+                "stat": "FIGHT_PROP_ATTACK",
+                "statValue": 12
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE_PERCENT",
                 "statValue": 5.3
               },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 34 }
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 34
+              }
+            ],
+            "rolledSubstatsIds": [
+              401233,
+              401052,
+              401093,
+              401242,
+              401233,
+              401244
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15020_1",
-            "equipType": "EQUIP_RING"
-          }
-        },
-        {
-          "itemId": 94533,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 13007,
-            "appendPropIdList": [
-              501032, 501052, 501024, 501243, 501243, 501024, 501243, 501053
-            ]
+            "equipType": "EQUIP_RING",
+            "name": "绯花之壶",
+            "setName": "绝缘之旗印"
           },
-          "flat": {
+          {
+            "artifactId": 94533,
+            "level": 21,
             "nameTextMapHash": "1804680132",
             "setNameTextMapHash": "2276480763",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_CRITICAL",
-              "statValue": 31.1
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_CRITICAL",
+              "statValue": 31.1,
+              "id": 13007
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_HP_PERCENT", "statValue": 4.7 },
-              { "appendPropId": "FIGHT_PROP_ATTACK", "statValue": 33 },
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 598 },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 63 }
+            "substats": [
+              {
+                "stat": "FIGHT_PROP_HP_PERCENT",
+                "statValue": 4.7
+              },
+              {
+                "stat": "FIGHT_PROP_ATTACK",
+                "statValue": 33
+              },
+              {
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 598
+              },
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 63
+              }
+            ],
+            "rolledSubstatsIds": [
+              501032,
+              501052,
+              501024,
+              501243,
+              501243,
+              501024,
+              501243,
+              501053
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15020_3",
-            "equipType": "EQUIP_DRESS"
+            "equipType": "EQUIP_DRESS",
+            "name": "华饰之兜",
+            "setName": "绝缘之旗印"
           }
-        },
-        {
-          "itemId": 13402,
-          "weapon": {
-            "level": 80,
-            "promoteLevel": 5,
-            "affixMap": { "113402": 0 }
+        ],
+        "weapon": {
+          "weaponId": 13402,
+          "level": 80,
+          "ascensionLevel": 5,
+          "refinement": {
+            "id": 113402,
+            "level": 0
           },
-          "flat": {
-            "nameTextMapHash": "1154009435",
-            "rankLevel": 4,
-            "weaponStats": [
-              { "appendPropId": "FIGHT_PROP_BASE_ATTACK", "statValue": 449 },
-              {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
-                "statValue": 41.9
-              }
-            ],
-            "itemType": "ITEM_WEAPON",
-            "icon": "UI_EquipIcon_Pole_Proto"
-          }
+          "nameTextMapHash": "1154009435",
+          "stars": 4,
+          "weaponStats": [
+            {
+              "stat": "FIGHT_PROP_BASE_ATTACK",
+              "statValue": 449
+            },
+            {
+              "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
+              "statValue": 41.9
+            }
+          ],
+          "itemType": "ITEM_WEAPON",
+          "assets": {
+            "icon": "UI_EquipIcon_Pole_Proto",
+            "awakenIcon": "UI_EquipIcon_Pole_Proto_Awaken"
+          },
+          "name": "试作星镰"
         }
-      ],
-      "fetterInfo": { "expLevel": 10 }
+      },
+      "friendship": {
+        "level": 10
+      },
+      "assets": {
+        "icon": "UI_AvatarIcon_Xiangling",
+        "sideIcon": "UI_AvatarIcon_Side_Xiangling",
+        "gachaIcon": "UI_Gacha_AvatarImg_Xiangling",
+        "constellations": [
+          "UI_Talent_S_Xiangling_01",
+          "UI_Talent_S_Xiangling_02",
+          "UI_Talent_U_Xiangling_02",
+          "UI_Talent_S_Xiangling_03",
+          "UI_Talent_U_Xiangling_01",
+          "UI_Talent_S_Xiangling_04"
+        ],
+        "talents": {
+          "normalAttack": "Skill_A_03",
+          "elementalSkill": "Skill_S_Xiangling_01",
+          "elementalBurst": "Skill_E_Xiangling_01"
+        },
+        "costumes": []
+      },
+      "costumeId": "",
+      "name": "香菱"
     },
     {
-      "avatarId": 10000030,
-      "propMap": {
-        "1001": { "type": 1001, "ival": "0" },
-        "1002": { "type": 1002, "ival": "5", "val": "5" },
-        "1003": { "type": 1003, "ival": "0" },
-        "1004": { "type": 1004, "ival": "0" },
-        "4001": { "type": 4001, "ival": "80", "val": "80" },
-        "10010": { "type": 10010, "ival": "23200", "val": "23200" },
-        "10049": { "type": 10049, "ival": "12000", "val": "12000" }
+      "characterId": 10000030,
+      "properties": {
+        "xp": {
+          "type": 1001,
+          "val": ""
+        },
+        "ascension": {
+          "type": 1002,
+          "val": "5"
+        },
+        "level": {
+          "type": 4001,
+          "val": "80"
+        },
+        "stamina": {
+          "type": 10010,
+          "val": "23200"
+        }
       },
-      "fightPropMap": {
-        "1": 12965.146484375,
-        "2": 6931.02978515625,
-        "3": 1.6350373029708862,
-        "4": 536.0186767578125,
-        "5": 330.45001220703125,
-        "6": 0.2157999873161316,
-        "7": 650.9547119140625,
-        "8": 20.829999923706055,
-        "9": 0.17489999532699585,
-        "20": 0.4814999997615814,
-        "21": 0,
-        "22": 0.8808000087738037,
-        "23": 1.148900032043457,
-        "26": 0,
-        "27": 0,
-        "28": 109.55999755859375,
-        "29": 0,
-        "30": 0,
-        "40": 0,
-        "41": 0,
-        "42": 0,
-        "43": 0,
-        "44": 0,
-        "45": 0.2160000056028366,
-        "46": 0,
-        "50": 0,
-        "51": 0,
-        "52": 0,
-        "53": 0,
-        "54": 0,
-        "55": 0,
-        "56": 0,
-        "76": 40,
-        "81": 0,
-        "1006": 6.204060077667236,
-        "1010": 31391.759765625,
-        "2000": 41094.67578125,
-        "2001": 982.1415405273438,
-        "2002": 785.63671875,
-        "2003": 0,
-        "2004": 0,
-        "2005": 0,
-        "3007": 0,
-        "3008": 0,
-        "3009": 0,
-        "3014": 0,
-        "3015": 0,
-        "3016": 0,
-        "3017": 0,
-        "3018": 0,
-        "3019": 0,
-        "3020": 0,
-        "3021": 0,
-        "3023": 0,
-        "3045": 0,
-        "3046": 1
+      "stats": {
+        "baseHp": {
+          "value": 12965.146484375
+        },
+        "hpPercentage": {
+          "value": 1.6350373029708862
+        },
+        "baseAtk": {
+          "value": 536.0186767578125
+        },
+        "atkPercentage": {
+          "value": 0.2157999873161316
+        },
+        "baseDef": {
+          "value": 650.9547119140625
+        },
+        "defPercentage": {
+          "value": 0.17489999532699585
+        },
+        "critRate": {
+          "value": 0.4814999997615814
+        },
+        "critDamage": {
+          "value": 0.8808000087738037
+        },
+        "energyRecharge": {
+          "value": 1.148900032043457
+        },
+        "healingBonus": {
+          "value": "0"
+        },
+        "incomingHealingBonus": {
+          "value": "0"
+        },
+        "elementalMastery": {
+          "value": 109.55999755859375
+        },
+        "physicalRes": {
+          "value": "0"
+        },
+        "physicalDamageBonus": {
+          "value": "0"
+        },
+        "pyroDamageBonus": {
+          "value": "0"
+        },
+        "electroDamageBonus": {
+          "value": "0"
+        },
+        "hydroDamageBonus": {
+          "value": "0"
+        },
+        "dendroDamageBonus": {
+          "value": "0"
+        },
+        "anemoDamageBonus": {
+          "value": "0"
+        },
+        "geoDamageBonus": {
+          "value": 0.2160000056028366
+        },
+        "cryoDamageBonus": {
+          "value": "0"
+        },
+        "pyroRes": {
+          "value": "0"
+        },
+        "electroRes": {
+          "value": "0"
+        },
+        "hydroRes": {
+          "value": "0"
+        },
+        "dendroRes": {
+          "value": "0"
+        },
+        "anemoRes": {
+          "value": "0"
+        },
+        "geoRes": {
+          "value": "0"
+        },
+        "cryoRes": {
+          "value": "0"
+        },
+        "pyroEnergyCost": {
+          "value": ""
+        },
+        "electroEnergyCost": {
+          "value": ""
+        },
+        "hydroEnergyCost": {
+          "value": ""
+        },
+        "dendroEnergyCost": {
+          "value": ""
+        },
+        "anemoEnergyCost": {
+          "value": ""
+        },
+        "cryoEnergyCost": {
+          "value": ""
+        },
+        "geoEnergyCost": {
+          "value": 40
+        },
+        "cooldownReduction": {
+          "value": "0"
+        },
+        "shieldStrength": {
+          "value": "0"
+        },
+        "currentPyroEnergy": {
+          "value": ""
+        },
+        "currentElectroEnergy": {
+          "value": ""
+        },
+        "currentHydroEnergy": {
+          "value": ""
+        },
+        "currentDendroEnergy": {
+          "value": ""
+        },
+        "currentAnemoEnergy": {
+          "value": ""
+        },
+        "currentCryoEnergy": {
+          "value": ""
+        },
+        "currentGeoEnergy": {
+          "value": 40
+        },
+        "currentHp": {
+          "value": 40579.015625
+        },
+        "maxHp": {
+          "value": 41094.67578125
+        },
+        "atk": {
+          "value": 982.1415405273438
+        },
+        "def": {
+          "value": 785.63671875
+        }
       },
+      "constellationsList": [],
       "skillDepotId": 3001,
-      "inherentProudSkillList": [302101, 302201, 302301],
-      "skillLevelMap": { "10301": 3, "10302": 8, "10303": 8 },
-      "equipList": [
-        {
-          "itemId": 91543,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 14001,
-            "appendPropIdList": [
-              501223, 501031, 501201, 501231, 501222, 501031, 501033, 501222
-            ]
+      "inherentProudSkillList": [
+        302101,
+        302201,
+        302301
+      ],
+      "skills": {
+        "normalAttacks": {
+          "level": 3,
+          "id": 10301,
+          "assets": {
+            "icon": "Skill_A_03"
           },
-          "flat": {
+          "name": "普通攻击·岩雨"
+        },
+        "elementalSkill": {
+          "level": 8,
+          "id": 10302,
+          "assets": {
+            "icon": "Skill_S_Zhongli_01"
+          },
+          "name": "地心"
+        },
+        "elementalBurst": {
+          "level": 8,
+          "id": 10303,
+          "assets": {
+            "icon": "Skill_E_Zhongli_01"
+          },
+          "name": "天星"
+        }
+      },
+      "skillsExtraLevel": {},
+      "equipment": {
+        "artifacts": [
+          {
+            "artifactId": 91543,
+            "level": 21,
             "nameTextMapHash": "1337987596",
             "setNameTextMapHash": "1337666507",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_HP",
-              "statValue": 4780
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_HP",
+              "statValue": 4780,
+              "id": 14001
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 19.4 },
-              { "appendPropId": "FIGHT_PROP_HP_PERCENT", "statValue": 13.4 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 2.7 },
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 19.4
+              },
+              {
+                "stat": "FIGHT_PROP_HP_PERCENT",
+                "statValue": 13.4
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 2.7
+              },
+              {
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 4.5
               }
+            ],
+            "rolledSubstatsIds": [
+              501223,
+              501031,
+              501201,
+              501231,
+              501222,
+              501031,
+              501033,
+              501222
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15017_4",
-            "equipType": "EQUIP_BRACER"
-          }
-        },
-        {
-          "itemId": 91523,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 12001,
-            "appendPropIdList": [
-              501201, 501092, 501221, 501244, 501093, 501202, 501223, 501203
-            ]
+            "equipType": "EQUIP_BRACER",
+            "name": "勋绩之花",
+            "setName": "千岩牢固"
           },
-          "flat": {
+          {
+            "artifactId": 91523,
+            "level": 21,
             "nameTextMapHash": "1170797788",
             "setNameTextMapHash": "1337666507",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK",
-              "statValue": 311
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK",
+              "statValue": 311,
+              "id": 12001
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 9.3 },
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_DEFENSE_PERCENT",
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 9.3
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE_PERCENT",
                 "statValue": 12.4
               },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 12.4 },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 23 }
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 12.4
+              },
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 23
+              }
+            ],
+            "rolledSubstatsIds": [
+              501201,
+              501092,
+              501221,
+              501244,
+              501093,
+              501202,
+              501223,
+              501203
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15017_2",
-            "equipType": "EQUIP_NECKLACE"
-          }
-        },
-        {
-          "itemId": 91553,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 10002,
-            "appendPropIdList": [
-              501231, 501063, 501021, 501244, 501233, 501064, 501063, 501023
-            ]
+            "equipType": "EQUIP_NECKLACE",
+            "name": "昭武翎羽",
+            "setName": "千岩牢固"
           },
-          "flat": {
+          {
+            "artifactId": 91553,
+            "level": 21,
             "nameTextMapHash": "3193539580",
             "setNameTextMapHash": "1337666507",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_HP_PERCENT",
-              "statValue": 46.6
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_HP_PERCENT",
+              "statValue": 46.6,
+              "id": 10002
             },
-            "reliquarySubstats": [
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 10.4
               },
               {
-                "appendPropId": "FIGHT_PROP_ATTACK_PERCENT",
+                "stat": "FIGHT_PROP_ATTACK_PERCENT",
                 "statValue": 16.3
               },
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 478 },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 23 }
+              {
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 478
+              },
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 23
+              }
+            ],
+            "rolledSubstatsIds": [
+              501231,
+              501063,
+              501021,
+              501244,
+              501233,
+              501064,
+              501063,
+              501023
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15017_5",
-            "equipType": "EQUIP_SHOES"
-          }
-        },
-        {
-          "itemId": 77513,
-          "reliquary": {
-            "level": 18,
-            "mainPropId": 15002,
-            "appendPropIdList": [
-              501083, 501063, 501022, 501091, 501023, 501021, 501021
-            ]
+            "equipType": "EQUIP_SHOES",
+            "name": "金铜时晷",
+            "setName": "千岩牢固"
           },
-          "flat": {
+          {
+            "artifactId": 77513,
+            "level": 18,
             "nameTextMapHash": "1979055244",
             "setNameTextMapHash": "147298547",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_HP_PERCENT",
-              "statValue": 40.7
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_HP_PERCENT",
+              "statValue": 40.7,
+              "id": 15002
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 21 },
-              { "appendPropId": "FIGHT_PROP_ATTACK_PERCENT", "statValue": 5.3 },
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 926 },
-              { "appendPropId": "FIGHT_PROP_DEFENSE_PERCENT", "statValue": 5.1 }
+            "substats": [
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 21
+              },
+              {
+                "stat": "FIGHT_PROP_ATTACK_PERCENT",
+                "statValue": 5.3
+              },
+              {
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 926
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE_PERCENT",
+                "statValue": 5.1
+              }
+            ],
+            "rolledSubstatsIds": [
+              501083,
+              501063,
+              501022,
+              501091,
+              501023,
+              501021,
+              501021
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15003_1",
-            "equipType": "EQUIP_RING"
-          }
-        },
-        {
-          "itemId": 91533,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 13007,
-            "appendPropIdList": [
-              501054, 501024, 501244, 501222, 501022, 501241, 501244, 501021
-            ]
+            "equipType": "EQUIP_RING",
+            "name": "吟游者之壶",
+            "setName": "流浪大地的乐团"
           },
-          "flat": {
+          {
+            "artifactId": 91533,
+            "level": 21,
             "nameTextMapHash": "3587145716",
             "setNameTextMapHash": "1337666507",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_CRITICAL",
-              "statValue": 31.1
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_CRITICAL",
+              "statValue": 31.1,
+              "id": 13007
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_ATTACK", "statValue": 19 },
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 747 },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 63 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 6.2 }
+            "substats": [
+              {
+                "stat": "FIGHT_PROP_ATTACK",
+                "statValue": 19
+              },
+              {
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 747
+              },
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 63
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 6.2
+              }
+            ],
+            "rolledSubstatsIds": [
+              501054,
+              501024,
+              501244,
+              501222,
+              501022,
+              501241,
+              501244,
+              501021
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15017_3",
-            "equipType": "EQUIP_DRESS"
+            "equipType": "EQUIP_DRESS",
+            "name": "将帅兜鍪",
+            "setName": "千岩牢固"
           }
-        },
-        {
-          "itemId": 13303,
-          "weapon": {
-            "level": 80,
-            "promoteLevel": 5,
-            "affixMap": { "113303": 4 }
+        ],
+        "weapon": {
+          "weaponId": 13303,
+          "level": 80,
+          "ascensionLevel": 5,
+          "refinement": {
+            "id": 113303,
+            "level": 4
           },
-          "flat": {
-            "nameTextMapHash": "4103766499",
-            "rankLevel": 3,
-            "weaponStats": [
-              { "appendPropId": "FIGHT_PROP_BASE_ATTACK", "statValue": 314 },
-              { "appendPropId": "FIGHT_PROP_HP_PERCENT", "statValue": 42.8 }
-            ],
-            "itemType": "ITEM_WEAPON",
-            "icon": "UI_EquipIcon_Pole_Noire"
-          }
+          "nameTextMapHash": "4103766499",
+          "stars": 3,
+          "weaponStats": [
+            {
+              "stat": "FIGHT_PROP_BASE_ATTACK",
+              "statValue": 314
+            },
+            {
+              "stat": "FIGHT_PROP_HP_PERCENT",
+              "statValue": 42.8
+            }
+          ],
+          "itemType": "ITEM_WEAPON",
+          "assets": {
+            "icon": "UI_EquipIcon_Pole_Noire",
+            "awakenIcon": "UI_EquipIcon_Pole_Noire_Awaken"
+          },
+          "name": "黑缨枪"
         }
-      ],
-      "fetterInfo": { "expLevel": 10 }
+      },
+      "friendship": {
+        "level": 10
+      },
+      "assets": {
+        "icon": "UI_AvatarIcon_Zhongli",
+        "sideIcon": "UI_AvatarIcon_Side_Zhongli",
+        "gachaIcon": "UI_Gacha_AvatarImg_Zhongli",
+        "constellations": [
+          "UI_Talent_S_Zhongli_01",
+          "UI_Talent_S_Zhongli_02",
+          "UI_Talent_U_Zhongli_01",
+          "UI_Talent_S_Zhongli_03",
+          "UI_Talent_U_Zhongli_02",
+          "UI_Talent_S_Zhongli_04"
+        ],
+        "talents": {
+          "normalAttack": "Skill_A_03",
+          "elementalSkill": "Skill_S_Zhongli_01",
+          "elementalBurst": "Skill_E_Zhongli_01"
+        },
+        "costumes": []
+      },
+      "costumeId": "",
+      "name": "钟离"
     },
     {
-      "avatarId": 10000037,
-      "propMap": {
-        "1001": { "type": 1001, "ival": "0" },
-        "1002": { "type": 1002, "ival": "6", "val": "6" },
-        "1003": { "type": 1003, "ival": "0" },
-        "1004": { "type": 1004, "ival": "0" },
-        "4001": { "type": 4001, "ival": "90", "val": "90" },
-        "10010": { "type": 10010, "ival": "23200", "val": "23200" },
-        "10049": { "type": 10049, "ival": "12000", "val": "12000" }
+      "characterId": 10000037,
+      "properties": {
+        "xp": {
+          "type": 1001,
+          "val": ""
+        },
+        "ascension": {
+          "type": 1002,
+          "val": "6"
+        },
+        "level": {
+          "type": 4001,
+          "val": "90"
+        },
+        "stamina": {
+          "type": 10010,
+          "val": "23200"
+        }
       },
-      "fightPropMap": {
-        "1": 9796.7294921875,
-        "2": 6602.39990234375,
-        "3": 0.05249999836087227,
-        "4": 942.9243774414062,
-        "5": 324.6199951171875,
-        "6": 0.9918000102043152,
-        "7": 630.214599609375,
-        "8": 94.9000015258789,
-        "20": 0.5904000401496887,
-        "21": 0,
-        "22": 2.019536018371582,
-        "23": 1.2202000617980957,
-        "26": 0,
-        "27": 0,
-        "28": 119.62999725341797,
-        "29": 0,
-        "30": 0,
-        "40": 0,
-        "41": 0,
-        "42": 0,
-        "43": 0,
-        "44": 0,
-        "45": 0,
-        "46": 0.4659999907016754,
-        "50": 0,
-        "51": 0,
-        "52": 0,
-        "53": 0,
-        "54": 0,
-        "55": 0,
-        "56": 0,
-        "75": 60,
-        "81": 0,
-        "1005": 59.34939956665039,
-        "1010": 10407.685546875,
-        "2000": 16913.45703125,
-        "2001": 2202.73681640625,
-        "2002": 725.1146240234375,
-        "2003": 0,
-        "2004": 0,
-        "2005": 0,
-        "3007": 0,
-        "3008": 0,
-        "3009": 0,
-        "3014": 0,
-        "3015": 0,
-        "3016": 0,
-        "3017": 0,
-        "3018": 0,
-        "3019": 0,
-        "3020": 0,
-        "3021": 0,
-        "3023": 0,
-        "3045": 0,
-        "3046": 1
+      "stats": {
+        "baseHp": {
+          "value": 9796.7294921875
+        },
+        "hpPercentage": {
+          "value": 0.05249999836087227
+        },
+        "baseAtk": {
+          "value": 942.9243774414062
+        },
+        "atkPercentage": {
+          "value": 0.9918000102043152
+        },
+        "baseDef": {
+          "value": 630.214599609375
+        },
+        "defPercentage": {
+          "value": "0"
+        },
+        "critRate": {
+          "value": 0.5904000401496887
+        },
+        "critDamage": {
+          "value": 2.019536018371582
+        },
+        "energyRecharge": {
+          "value": 1.2202000617980957
+        },
+        "healingBonus": {
+          "value": "0"
+        },
+        "incomingHealingBonus": {
+          "value": "0"
+        },
+        "elementalMastery": {
+          "value": 119.62999725341797
+        },
+        "physicalRes": {
+          "value": "0"
+        },
+        "physicalDamageBonus": {
+          "value": "0"
+        },
+        "pyroDamageBonus": {
+          "value": "0"
+        },
+        "electroDamageBonus": {
+          "value": "0"
+        },
+        "hydroDamageBonus": {
+          "value": "0"
+        },
+        "dendroDamageBonus": {
+          "value": "0"
+        },
+        "anemoDamageBonus": {
+          "value": "0"
+        },
+        "geoDamageBonus": {
+          "value": "0"
+        },
+        "cryoDamageBonus": {
+          "value": 0.4659999907016754
+        },
+        "pyroRes": {
+          "value": "0"
+        },
+        "electroRes": {
+          "value": "0"
+        },
+        "hydroRes": {
+          "value": "0"
+        },
+        "dendroRes": {
+          "value": "0"
+        },
+        "anemoRes": {
+          "value": "0"
+        },
+        "geoRes": {
+          "value": "0"
+        },
+        "cryoRes": {
+          "value": "0"
+        },
+        "pyroEnergyCost": {
+          "value": ""
+        },
+        "electroEnergyCost": {
+          "value": ""
+        },
+        "hydroEnergyCost": {
+          "value": ""
+        },
+        "dendroEnergyCost": {
+          "value": ""
+        },
+        "anemoEnergyCost": {
+          "value": ""
+        },
+        "cryoEnergyCost": {
+          "value": 60
+        },
+        "geoEnergyCost": {
+          "value": ""
+        },
+        "cooldownReduction": {
+          "value": "0"
+        },
+        "shieldStrength": {
+          "value": "0"
+        },
+        "currentPyroEnergy": {
+          "value": ""
+        },
+        "currentElectroEnergy": {
+          "value": ""
+        },
+        "currentHydroEnergy": {
+          "value": ""
+        },
+        "currentDendroEnergy": {
+          "value": ""
+        },
+        "currentAnemoEnergy": {
+          "value": ""
+        },
+        "currentCryoEnergy": {
+          "value": 60
+        },
+        "currentGeoEnergy": {
+          "value": ""
+        },
+        "currentHp": {
+          "value": 2551.60595703125
+        },
+        "maxHp": {
+          "value": 16913.45703125
+        },
+        "atk": {
+          "value": 2202.73681640625
+        },
+        "def": {
+          "value": 725.1146240234375
+        }
       },
+      "constellationsList": [],
       "skillDepotId": 3701,
-      "inherentProudSkillList": [372101, 372201, 372301],
-      "skillLevelMap": { "10371": 10, "10372": 6, "10373": 8 },
-      "equipList": [
-        {
-          "itemId": 77543,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 14001,
-            "appendPropIdList": [
-              501204, 501083, 501224, 501051, 501084, 501222, 501202, 501224
-            ]
+      "inherentProudSkillList": [
+        372101,
+        372201,
+        372301
+      ],
+      "skills": {
+        "normalAttacks": {
+          "level": 10,
+          "id": 10371,
+          "assets": {
+            "icon": "Skill_A_02"
           },
-          "flat": {
+          "name": "普通攻击·流天射术"
+        },
+        "elementalSkill": {
+          "level": 6,
+          "id": 10372,
+          "assets": {
+            "icon": "Skill_S_Ganyu_01"
+          },
+          "name": "山泽麟迹"
+        },
+        "elementalBurst": {
+          "level": 8,
+          "id": 10373,
+          "assets": {
+            "icon": "Skill_E_Ganyu_01"
+          },
+          "name": "降众天华"
+        }
+      },
+      "skillsExtraLevel": {},
+      "equipment": {
+        "artifacts": [
+          {
+            "artifactId": 77543,
+            "level": 21,
             "nameTextMapHash": "3443777948",
             "setNameTextMapHash": "147298547",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_HP",
-              "statValue": 4780
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_HP",
+              "statValue": 4780,
+              "id": 14001
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 7 },
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 44 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 21.8 },
-              { "appendPropId": "FIGHT_PROP_ATTACK", "statValue": 14 }
+            "substats": [
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 7
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 44
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 21.8
+              },
+              {
+                "stat": "FIGHT_PROP_ATTACK",
+                "statValue": 14
+              }
+            ],
+            "rolledSubstatsIds": [
+              501204,
+              501083,
+              501224,
+              501051,
+              501084,
+              501222,
+              501202,
+              501224
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15003_4",
-            "equipType": "EQUIP_BRACER"
-          }
-        },
-        {
-          "itemId": 77524,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 12001,
-            "appendPropIdList": [
-              501234, 501062, 501223, 501082, 501064, 501231, 501223, 501064,
-              501234
-            ]
+            "equipType": "EQUIP_BRACER",
+            "name": "乐团的晨光",
+            "setName": "流浪大地的乐团"
           },
-          "flat": {
+          {
+            "artifactId": 77524,
+            "level": 21,
             "nameTextMapHash": "1053564268",
             "setNameTextMapHash": "147298547",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK",
-              "statValue": 311
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK",
+              "statValue": 311,
+              "id": 12001
             },
-            "reliquarySubstats": [
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 17.5
               },
               {
-                "appendPropId": "FIGHT_PROP_ATTACK_PERCENT",
+                "stat": "FIGHT_PROP_ATTACK_PERCENT",
                 "statValue": 16.3
               },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 14 },
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 19 }
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 14
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 19
+              }
+            ],
+            "rolledSubstatsIds": [
+              501234,
+              501062,
+              501223,
+              501082,
+              501064,
+              501231,
+              501223,
+              501064,
+              501234
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15003_2",
-            "equipType": "EQUIP_NECKLACE"
-          }
-        },
-        {
-          "itemId": 77554,
-          "reliquary": {
-            "level": 18,
-            "mainPropId": 10004,
-            "appendPropIdList": [
-              501024, 501243, 501033, 501202, 501242, 501202, 501203, 501021
-            ]
+            "equipType": "EQUIP_NECKLACE",
+            "name": "琴师的箭羽",
+            "setName": "流浪大地的乐团"
           },
-          "flat": {
+          {
+            "artifactId": 77554,
+            "level": 18,
             "nameTextMapHash": "744414012",
             "setNameTextMapHash": "147298547",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK_PERCENT",
-              "statValue": 40.7
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK_PERCENT",
+              "statValue": 40.7,
+              "id": 10004
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 508 },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 40 },
-              { "appendPropId": "FIGHT_PROP_HP_PERCENT", "statValue": 5.3 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 9.7 }
+            "substats": [
+              {
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 508
+              },
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 40
+              },
+              {
+                "stat": "FIGHT_PROP_HP_PERCENT",
+                "statValue": 5.3
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 9.7
+              }
+            ],
+            "rolledSubstatsIds": [
+              501024,
+              501243,
+              501033,
+              501202,
+              501242,
+              501202,
+              501203,
+              501021
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15003_5",
-            "equipType": "EQUIP_SHOES"
-          }
-        },
-        {
-          "itemId": 98514,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 15010,
-            "appendPropIdList": [
-              501201, 501081, 501021, 501063, 501063, 501022, 501203, 501081,
-              501022
-            ]
+            "equipType": "EQUIP_SHOES",
+            "name": "终幕的时计",
+            "setName": "流浪大地的乐团"
           },
-          "flat": {
+          {
+            "artifactId": 98514,
+            "level": 21,
             "nameTextMapHash": "3987281540",
             "setNameTextMapHash": "3626268211",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ICE_ADD_HURT",
-              "statValue": 46.6
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ICE_ADD_HURT",
+              "statValue": 46.6,
+              "id": 15010
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 6.2 },
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 32 },
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 687 },
-              { "appendPropId": "FIGHT_PROP_ATTACK_PERCENT", "statValue": 10.5 }
+            "substats": [
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 6.2
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 32
+              },
+              {
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 687
+              },
+              {
+                "stat": "FIGHT_PROP_ATTACK_PERCENT",
+                "statValue": 10.5
+              }
+            ],
+            "rolledSubstatsIds": [
+              501201,
+              501081,
+              501021,
+              501063,
+              501063,
+              501022,
+              501203,
+              501081,
+              501022
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15024_1",
-            "equipType": "EQUIP_RING"
-          }
-        },
-        {
-          "itemId": 77533,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 13007,
-            "appendPropIdList": [
-              501231, 501021, 501222, 501064, 501221, 501021, 501021, 501064
-            ]
+            "equipType": "EQUIP_RING",
+            "name": "涌泉之盏",
+            "setName": "来歆余响"
           },
-          "flat": {
+          {
+            "artifactId": 77533,
+            "level": 21,
             "nameTextMapHash": "2641672172",
             "setNameTextMapHash": "147298547",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_CRITICAL",
-              "statValue": 31.1
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_CRITICAL",
+              "statValue": 31.1,
+              "id": 13007
             },
-            "reliquarySubstats": [
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 4.5
               },
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 627 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 11.7 },
-              { "appendPropId": "FIGHT_PROP_ATTACK_PERCENT", "statValue": 11.7 }
+              {
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 627
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 11.7
+              },
+              {
+                "stat": "FIGHT_PROP_ATTACK_PERCENT",
+                "statValue": 11.7
+              }
+            ],
+            "rolledSubstatsIds": [
+              501231,
+              501021,
+              501222,
+              501064,
+              501221,
+              501021,
+              501021,
+              501064
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15003_3",
-            "equipType": "EQUIP_DRESS"
+            "equipType": "EQUIP_DRESS",
+            "name": "指挥的礼帽",
+            "setName": "流浪大地的乐团"
           }
-        },
-        {
-          "itemId": 15509,
-          "weapon": {
-            "level": 90,
-            "promoteLevel": 6,
-            "affixMap": { "115509": 0 }
+        ],
+        "weapon": {
+          "weaponId": 15509,
+          "level": 90,
+          "ascensionLevel": 6,
+          "refinement": {
+            "id": 115509,
+            "level": 0
           },
-          "flat": {
-            "nameTextMapHash": "2918525947",
-            "rankLevel": 5,
-            "weaponStats": [
-              { "appendPropId": "FIGHT_PROP_BASE_ATTACK", "statValue": 608 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 66.2 }
-            ],
-            "itemType": "ITEM_WEAPON",
-            "icon": "UI_EquipIcon_Bow_Narukami"
-          }
+          "nameTextMapHash": "2918525947",
+          "stars": 5,
+          "weaponStats": [
+            {
+              "stat": "FIGHT_PROP_BASE_ATTACK",
+              "statValue": 608
+            },
+            {
+              "stat": "FIGHT_PROP_CRITICAL_HURT",
+              "statValue": 66.2
+            }
+          ],
+          "itemType": "ITEM_WEAPON",
+          "assets": {
+            "icon": "UI_EquipIcon_Bow_Narukami",
+            "awakenIcon": "UI_EquipIcon_Bow_Narukami_Awaken"
+          },
+          "name": "飞雷之弦振"
         }
-      ],
-      "fetterInfo": { "expLevel": 10 }
+      },
+      "friendship": {
+        "level": 10
+      },
+      "assets": {
+        "icon": "UI_AvatarIcon_Ganyu",
+        "sideIcon": "UI_AvatarIcon_Side_Ganyu",
+        "gachaIcon": "UI_Gacha_AvatarImg_Ganyu",
+        "constellations": [
+          "UI_Talent_S_Ganyu_01",
+          "UI_Talent_S_Ganyu_02",
+          "UI_Talent_U_Ganyu_01",
+          "UI_Talent_S_Ganyu_03",
+          "UI_Talent_U_Ganyu_02",
+          "UI_Talent_S_Ganyu_04"
+        ],
+        "talents": {
+          "normalAttack": "Skill_A_02",
+          "elementalSkill": "Skill_S_Ganyu_01",
+          "elementalBurst": "Skill_E_Ganyu_01"
+        },
+        "costumes": []
+      },
+      "costumeId": "",
+      "name": "甘雨"
     },
     {
-      "avatarId": 10000047,
-      "propMap": {
-        "1001": { "type": 1001, "ival": "0" },
-        "1002": { "type": 1002, "ival": "6", "val": "6" },
-        "1003": { "type": 1003, "ival": "0" },
-        "1004": { "type": 1004, "ival": "0" },
-        "4001": { "type": 4001, "ival": "90", "val": "90" },
-        "10010": { "type": 10010, "ival": "23200", "val": "23200" },
-        "10049": { "type": 10049, "ival": "12000", "val": "12000" }
+      "characterId": 10000047,
+      "properties": {
+        "xp": {
+          "type": 1001,
+          "val": ""
+        },
+        "ascension": {
+          "type": 1002,
+          "val": "6"
+        },
+        "level": {
+          "type": 4001,
+          "val": "90"
+        },
+        "stamina": {
+          "type": 10010,
+          "val": "23200"
+        }
       },
-      "fightPropMap": {
-        "1": 13348.04296875,
-        "2": 5258.009765625,
-        "3": 0.30309998989105225,
-        "4": 745.263916015625,
-        "5": 365.47998046875,
-        "6": 0.4659999907016754,
-        "7": 806.9820556640625,
-        "8": 32.400001525878906,
-        "9": 0.21140000224113464,
-        "20": 0.36100003123283386,
-        "21": 0,
-        "22": 0.7408999800682068,
-        "23": 1.3625999689102173,
-        "24": 0,
-        "26": 0,
-        "27": 0,
-        "28": 706.6400146484375,
-        "29": 0,
-        "30": 0,
-        "40": 0,
-        "41": 0,
-        "42": 0,
-        "43": 0,
-        "44": 0.15000000596046448,
-        "45": 0,
-        "46": 0,
-        "50": 0,
-        "51": 0,
-        "52": 0,
-        "53": 0,
-        "54": 0,
-        "55": 0,
-        "56": 0,
-        "74": 60,
-        "81": 0,
-        "1004": 60,
-        "1010": 22651.84375,
-        "2000": 22651.84375,
-        "2001": 1458.036865234375,
-        "2002": 1009.9780883789062,
-        "2003": 0,
-        "2004": 0,
-        "2005": 0,
-        "3002": 0,
-        "3007": 0,
-        "3008": 0,
-        "3009": 0,
-        "3014": 0,
-        "3015": 0,
-        "3016": 0,
-        "3017": 0,
-        "3018": 0,
-        "3019": 0,
-        "3020": 0,
-        "3021": 0,
-        "3023": 0,
-        "3045": 0,
-        "3046": 1
+      "stats": {
+        "baseHp": {
+          "value": 13348.04296875
+        },
+        "hpPercentage": {
+          "value": 0.30309998989105225
+        },
+        "baseAtk": {
+          "value": 745.263916015625
+        },
+        "atkPercentage": {
+          "value": 0.4659999907016754
+        },
+        "baseDef": {
+          "value": 806.9820556640625
+        },
+        "defPercentage": {
+          "value": 0.21140000224113464
+        },
+        "critRate": {
+          "value": 0.36100003123283386
+        },
+        "critDamage": {
+          "value": 0.7408999800682068
+        },
+        "energyRecharge": {
+          "value": 1.3625999689102173
+        },
+        "healingBonus": {
+          "value": "0"
+        },
+        "incomingHealingBonus": {
+          "value": "0"
+        },
+        "elementalMastery": {
+          "value": 706.6400146484375
+        },
+        "physicalRes": {
+          "value": "0"
+        },
+        "physicalDamageBonus": {
+          "value": "0"
+        },
+        "pyroDamageBonus": {
+          "value": "0"
+        },
+        "electroDamageBonus": {
+          "value": "0"
+        },
+        "hydroDamageBonus": {
+          "value": "0"
+        },
+        "dendroDamageBonus": {
+          "value": "0"
+        },
+        "anemoDamageBonus": {
+          "value": 0.15000000596046448
+        },
+        "geoDamageBonus": {
+          "value": "0"
+        },
+        "cryoDamageBonus": {
+          "value": "0"
+        },
+        "pyroRes": {
+          "value": "0"
+        },
+        "electroRes": {
+          "value": "0"
+        },
+        "hydroRes": {
+          "value": "0"
+        },
+        "dendroRes": {
+          "value": "0"
+        },
+        "anemoRes": {
+          "value": "0"
+        },
+        "geoRes": {
+          "value": "0"
+        },
+        "cryoRes": {
+          "value": "0"
+        },
+        "pyroEnergyCost": {
+          "value": ""
+        },
+        "electroEnergyCost": {
+          "value": ""
+        },
+        "hydroEnergyCost": {
+          "value": ""
+        },
+        "dendroEnergyCost": {
+          "value": ""
+        },
+        "anemoEnergyCost": {
+          "value": 60
+        },
+        "cryoEnergyCost": {
+          "value": ""
+        },
+        "geoEnergyCost": {
+          "value": ""
+        },
+        "cooldownReduction": {
+          "value": "0"
+        },
+        "shieldStrength": {
+          "value": "0"
+        },
+        "currentPyroEnergy": {
+          "value": ""
+        },
+        "currentElectroEnergy": {
+          "value": ""
+        },
+        "currentHydroEnergy": {
+          "value": ""
+        },
+        "currentDendroEnergy": {
+          "value": ""
+        },
+        "currentAnemoEnergy": {
+          "value": 60
+        },
+        "currentCryoEnergy": {
+          "value": ""
+        },
+        "currentGeoEnergy": {
+          "value": ""
+        },
+        "currentHp": {
+          "value": 14248.251953125
+        },
+        "maxHp": {
+          "value": 22651.84375
+        },
+        "atk": {
+          "value": 1458.036865234375
+        },
+        "def": {
+          "value": 1009.9780883789062
+        }
       },
+      "constellationsList": [],
       "skillDepotId": 4701,
-      "inherentProudSkillList": [472101, 472201, 472301],
-      "skillLevelMap": { "10471": 3, "10472": 6, "10475": 4 },
-      "equipList": [
-        {
-          "itemId": 76544,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 14001,
-            "appendPropIdList": [
-              501202, 501232, 501094, 501032, 501032, 501202, 501094, 501033,
-              501201
-            ]
+      "inherentProudSkillList": [
+        472101,
+        472201,
+        472301
+      ],
+      "skills": {
+        "normalAttacks": {
+          "level": 3,
+          "id": 10471,
+          "assets": {
+            "icon": "Skill_A_01"
           },
-          "flat": {
+          "name": "普通攻击·我流剑术"
+        },
+        "elementalSkill": {
+          "level": 6,
+          "id": 10472,
+          "assets": {
+            "icon": "Skill_S_Kazuha_01"
+          },
+          "name": "千早振"
+        },
+        "elementalBurst": {
+          "level": 4,
+          "id": 10475,
+          "assets": {
+            "icon": "Skill_E_Kazuha_01"
+          },
+          "name": "万叶之一刀"
+        }
+      },
+      "skillsExtraLevel": {},
+      "equipment": {
+        "artifacts": [
+          {
+            "artifactId": 76544,
+            "level": 21,
             "nameTextMapHash": "2411209276",
             "setNameTextMapHash": "1562601179",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_HP",
-              "statValue": 4780
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_HP",
+              "statValue": 4780,
+              "id": 14001
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 8.9 },
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 8.9
+              },
+              {
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 5.2
               },
               {
-                "appendPropId": "FIGHT_PROP_DEFENSE_PERCENT",
+                "stat": "FIGHT_PROP_DEFENSE_PERCENT",
                 "statValue": 14.6
               },
-              { "appendPropId": "FIGHT_PROP_HP_PERCENT", "statValue": 14.6 }
+              {
+                "stat": "FIGHT_PROP_HP_PERCENT",
+                "statValue": 14.6
+              }
+            ],
+            "rolledSubstatsIds": [
+              501202,
+              501232,
+              501094,
+              501032,
+              501032,
+              501202,
+              501094,
+              501033,
+              501201
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15002_4",
-            "equipType": "EQUIP_BRACER"
-          }
-        },
-        {
-          "itemId": 76523,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 12001,
-            "appendPropIdList": [
-              501244, 501203, 501222, 501232, 501232, 501233, 501244, 501243
-            ]
+            "equipType": "EQUIP_BRACER",
+            "name": "野花记忆的绿野",
+            "setName": "翠绿之影"
           },
-          "flat": {
+          {
+            "artifactId": 76523,
+            "level": 21,
             "nameTextMapHash": "2718260116",
             "setNameTextMapHash": "1562601179",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK",
-              "statValue": 311
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK",
+              "statValue": 311,
+              "id": 12001
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 68 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 3.5 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 6.2 },
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 68
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 3.5
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 6.2
+              },
+              {
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 16.2
               }
             ],
+            "rolledSubstatsIds": [
+              501244,
+              501203,
+              501222,
+              501232,
+              501232,
+              501233,
+              501244,
+              501243
+            ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15002_2",
-            "equipType": "EQUIP_NECKLACE"
-          }
-        },
-        {
-          "itemId": 76553,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 10008,
-            "appendPropIdList": [
-              501202, 501021, 501081, 501032, 501033, 501023, 501081, 501204
-            ]
+            "equipType": "EQUIP_NECKLACE",
+            "name": "猎人青翠的箭羽",
+            "setName": "翠绿之影"
           },
-          "flat": {
+          {
+            "artifactId": 76553,
+            "level": 21,
             "nameTextMapHash": "3520684620",
             "setNameTextMapHash": "1562601179",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ELEMENT_MASTERY",
-              "statValue": 187
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+              "statValue": 187,
+              "id": 10008
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 7 },
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 478 },
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 32 },
-              { "appendPropId": "FIGHT_PROP_HP_PERCENT", "statValue": 9.9 }
+            "substats": [
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 7
+              },
+              {
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 478
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 32
+              },
+              {
+                "stat": "FIGHT_PROP_HP_PERCENT",
+                "statValue": 9.9
+              }
+            ],
+            "rolledSubstatsIds": [
+              501202,
+              501021,
+              501081,
+              501032,
+              501033,
+              501023,
+              501081,
+              501204
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15002_5",
-            "equipType": "EQUIP_SHOES"
-          }
-        },
-        {
-          "itemId": 76513,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 15004,
-            "appendPropIdList": [
-              501223, 501201, 501051, 501034, 501221, 501051, 501203, 501221
-            ]
+            "equipType": "EQUIP_SHOES",
+            "name": "翠绿猎人的笃定",
+            "setName": "翠绿之影"
           },
-          "flat": {
+          {
+            "artifactId": 76513,
+            "level": 21,
             "nameTextMapHash": "2114829356",
             "setNameTextMapHash": "1562601179",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK_PERCENT",
-              "statValue": 46.6
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK_PERCENT",
+              "statValue": 46.6,
+              "id": 15004
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 17.9 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 6.2 },
-              { "appendPropId": "FIGHT_PROP_ATTACK", "statValue": 27 },
-              { "appendPropId": "FIGHT_PROP_HP_PERCENT", "statValue": 5.8 }
+            "substats": [
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 17.9
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 6.2
+              },
+              {
+                "stat": "FIGHT_PROP_ATTACK",
+                "statValue": 27
+              },
+              {
+                "stat": "FIGHT_PROP_HP_PERCENT",
+                "statValue": 5.8
+              }
+            ],
+            "rolledSubstatsIds": [
+              501223,
+              501201,
+              501051,
+              501034,
+              501221,
+              501051,
+              501203,
+              501221
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15002_1",
-            "equipType": "EQUIP_RING"
-          }
-        },
-        {
-          "itemId": 77533,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 13010,
-            "appendPropIdList": [
-              501201, 501051, 501231, 501093, 501051, 501231, 501201, 501233
-            ]
+            "equipType": "EQUIP_RING",
+            "name": "翠绿猎人的容器",
+            "setName": "翠绿之影"
           },
-          "flat": {
+          {
+            "artifactId": 77533,
+            "level": 21,
             "nameTextMapHash": "2641672172",
             "setNameTextMapHash": "147298547",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ELEMENT_MASTERY",
-              "statValue": 187
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+              "statValue": 187,
+              "id": 13010
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 5.4 },
-              { "appendPropId": "FIGHT_PROP_ATTACK", "statValue": 27 },
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 5.4
+              },
+              {
+                "stat": "FIGHT_PROP_ATTACK",
+                "statValue": 27
+              },
+              {
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 14.9
               },
-              { "appendPropId": "FIGHT_PROP_DEFENSE_PERCENT", "statValue": 6.6 }
+              {
+                "stat": "FIGHT_PROP_DEFENSE_PERCENT",
+                "statValue": 6.6
+              }
+            ],
+            "rolledSubstatsIds": [
+              501201,
+              501051,
+              501231,
+              501093,
+              501051,
+              501231,
+              501201,
+              501233
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15003_3",
-            "equipType": "EQUIP_DRESS"
+            "equipType": "EQUIP_DRESS",
+            "name": "指挥的礼帽",
+            "setName": "流浪大地的乐团"
+          }
+        ],
+        "weapon": {
+          "weaponId": 11407,
+          "level": 80,
+          "ascensionLevel": 5,
+          "refinement": {
+            "id": 111407,
+            "level": 0
+          },
+          "nameTextMapHash": "4103022435",
+          "stars": 4,
+          "weaponStats": [
+            {
+              "stat": "FIGHT_PROP_BASE_ATTACK",
+              "statValue": 449
+            },
+            {
+              "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+              "statValue": 151
+            }
+          ],
+          "itemType": "ITEM_WEAPON",
+          "assets": {
+            "icon": "UI_EquipIcon_Sword_Exotic",
+            "awakenIcon": "UI_EquipIcon_Sword_Exotic_Awaken"
+          },
+          "name": "铁蜂刺"
+        }
+      },
+      "friendship": {
+        "level": 9
+      },
+      "assets": {
+        "icon": "UI_AvatarIcon_Kazuha",
+        "sideIcon": "UI_AvatarIcon_Side_Kazuha",
+        "gachaIcon": "UI_Gacha_AvatarImg_Kazuha",
+        "constellations": [
+          "UI_Talent_S_Kazuha_01",
+          "UI_Talent_S_Kazuha_02",
+          "UI_Talent_U_Kazuha_01",
+          "UI_Talent_S_Kazuha_03",
+          "UI_Talent_U_Kazuha_02",
+          "UI_Talent_S_Kazuha_04"
+        ],
+        "talents": {
+          "normalAttack": "Skill_A_01",
+          "elementalSkill": "Skill_S_Kazuha_01",
+          "elementalBurst": "Skill_E_Kazuha_01"
+        },
+        "costumes": []
+      },
+      "costumeId": "",
+      "name": "枫原万叶"
+    },
+    {
+      "characterId": 10000042,
+      "properties": {
+        "xp": {
+          "type": 1001,
+          "val": ""
+        },
+        "ascension": {
+          "type": 1002,
+          "val": "5"
+        },
+        "level": {
+          "type": 4001,
+          "val": "80"
+        },
+        "stamina": {
+          "type": 10010,
+          "val": "23200"
+        }
+      },
+      "stats": {
+        "baseHp": {
+          "value": 11560.58984375
+        },
+        "hpPercentage": {
+          "value": 0.093299999833107
+        },
+        "baseAtk": {
+          "value": 794.4854125976562
+        },
+        "atkPercentage": {
+          "value": 0.9071600437164307
+        },
+        "baseDef": {
+          "value": 705.2009887695312
+        },
+        "defPercentage": {
+          "value": 0.20399999618530273
+        },
+        "critRate": {
+          "value": 0.5072000026702881
+        },
+        "critDamage": {
+          "value": 1.0927000045776367
+        },
+        "energyRecharge": {
+          "value": 1.2396999597549438
+        },
+        "healingBonus": {
+          "value": "0"
+        },
+        "incomingHealingBonus": {
+          "value": "0"
+        },
+        "elementalMastery": {
+          "value": 156.66000366210938
+        },
+        "physicalRes": {
+          "value": "0"
+        },
+        "physicalDamageBonus": {
+          "value": "0"
+        },
+        "pyroDamageBonus": {
+          "value": "0"
+        },
+        "electroDamageBonus": {
+          "value": 0.6159999966621399
+        },
+        "hydroDamageBonus": {
+          "value": "0"
+        },
+        "dendroDamageBonus": {
+          "value": "0"
+        },
+        "anemoDamageBonus": {
+          "value": "0"
+        },
+        "geoDamageBonus": {
+          "value": "0"
+        },
+        "cryoDamageBonus": {
+          "value": "0"
+        },
+        "pyroRes": {
+          "value": "0"
+        },
+        "electroRes": {
+          "value": "0"
+        },
+        "hydroRes": {
+          "value": "0"
+        },
+        "dendroRes": {
+          "value": "0"
+        },
+        "anemoRes": {
+          "value": "0"
+        },
+        "geoRes": {
+          "value": "0"
+        },
+        "cryoRes": {
+          "value": "0"
+        },
+        "pyroEnergyCost": {
+          "value": ""
+        },
+        "electroEnergyCost": {
+          "value": 40
+        },
+        "hydroEnergyCost": {
+          "value": ""
+        },
+        "dendroEnergyCost": {
+          "value": ""
+        },
+        "anemoEnergyCost": {
+          "value": ""
+        },
+        "cryoEnergyCost": {
+          "value": ""
+        },
+        "geoEnergyCost": {
+          "value": ""
+        },
+        "cooldownReduction": {
+          "value": "0"
+        },
+        "shieldStrength": {
+          "value": "0"
+        },
+        "currentPyroEnergy": {
+          "value": ""
+        },
+        "currentElectroEnergy": {
+          "value": 40
+        },
+        "currentHydroEnergy": {
+          "value": ""
+        },
+        "currentDendroEnergy": {
+          "value": ""
+        },
+        "currentAnemoEnergy": {
+          "value": ""
+        },
+        "currentCryoEnergy": {
+          "value": ""
+        },
+        "currentGeoEnergy": {
+          "value": ""
+        },
+        "currentHp": {
+          "value": 12526.1005859375
+        },
+        "maxHp": {
+          "value": 17610.392578125
+        },
+        "atk": {
+          "value": 1782.2208251953125
+        },
+        "def": {
+          "value": 886.1019897460938
+        }
+      },
+      "constellationsList": [
+        {
+          "id": 421,
+          "name": "雷厉",
+          "assets": {
+            "icon": "UI_Talent_S_Keqing_01"
           }
         },
         {
-          "itemId": 11407,
-          "weapon": {
-            "level": 80,
-            "promoteLevel": 5,
-            "affixMap": { "111407": 0 }
-          },
-          "flat": {
-            "nameTextMapHash": "4103022435",
-            "rankLevel": 4,
-            "weaponStats": [
-              { "appendPropId": "FIGHT_PROP_BASE_ATTACK", "statValue": 449 },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 151 }
-            ],
-            "itemType": "ITEM_WEAPON",
-            "icon": "UI_EquipIcon_Sword_Exotic"
+          "id": 422,
+          "name": "苛捐",
+          "assets": {
+            "icon": "UI_Talent_S_Keqing_02"
+          }
+        },
+        {
+          "id": 423,
+          "name": "登楼",
+          "assets": {
+            "icon": "UI_Talent_U_Keqing_01"
           }
         }
       ],
-      "fetterInfo": { "expLevel": 9 }
-    },
-    {
-      "avatarId": 10000042,
-      "propMap": {
-        "1001": { "type": 1001, "ival": "0" },
-        "1002": { "type": 1002, "ival": "5", "val": "5" },
-        "1003": { "type": 1003, "ival": "0" },
-        "1004": { "type": 1004, "ival": "0" },
-        "4001": { "type": 4001, "ival": "80", "val": "80" },
-        "10010": { "type": 10010, "ival": "23200", "val": "23200" },
-        "10049": { "type": 10049, "ival": "12000", "val": "12000" }
-      },
-      "talentIdList": [421, 422, 423],
-      "fightPropMap": {
-        "1": 11560.58984375,
-        "2": 4971.2001953125,
-        "3": 0.093299999833107,
-        "4": 794.4854125976562,
-        "5": 267.010009765625,
-        "6": 0.9071600437164307,
-        "7": 705.2009887695312,
-        "8": 37.040000915527344,
-        "9": 0.20399999618530273,
-        "20": 0.5072000026702881,
-        "21": 0,
-        "22": 1.0927000045776367,
-        "23": 1.2396999597549438,
-        "26": 0,
-        "27": 0,
-        "28": 156.66000366210938,
-        "29": 0,
-        "30": 0,
-        "40": 0,
-        "41": 0.6159999966621399,
-        "42": 0,
-        "43": 0,
-        "44": 0,
-        "45": 0,
-        "46": 0,
-        "50": 0,
-        "51": 0,
-        "52": 0,
-        "53": 0,
-        "54": 0,
-        "55": 0,
-        "56": 0,
-        "71": 40,
-        "1001": 40,
-        "1010": 12526.1005859375,
-        "2000": 17610.392578125,
-        "2001": 1782.2208251953125,
-        "2002": 886.1019897460938,
-        "2003": 0,
-        "2004": 0,
-        "3045": 0,
-        "3046": 1
-      },
       "skillDepotId": 4201,
-      "inherentProudSkillList": [422101, 422201, 422301],
-      "skillLevelMap": { "10421": 7, "10422": 8, "10425": 8 },
-      "proudSkillExtraLevelMap": { "4239": 3 },
-      "equipList": [
-        {
-          "itemId": 79543,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 14001,
-            "appendPropIdList": [
-              501233, 501244, 501222, 501031, 501221, 501242, 501242, 501243
-            ]
+      "inherentProudSkillList": [
+        422101,
+        422201,
+        422301
+      ],
+      "skills": {
+        "normalAttacks": {
+          "level": 7,
+          "id": 10421,
+          "assets": {
+            "icon": "Skill_A_01"
           },
-          "flat": {
+          "name": "普通攻击·云来剑法"
+        },
+        "elementalSkill": {
+          "level": 8,
+          "id": 10422,
+          "assets": {
+            "icon": "Skill_S_Keqing_01"
+          },
+          "name": "星斗归位"
+        },
+        "elementalBurst": {
+          "level": 8,
+          "id": 10425,
+          "assets": {
+            "icon": "Skill_E_Keqing_01"
+          },
+          "name": "天街巡游"
+        }
+      },
+      "skillsExtraLevel": {
+        "4239": 3
+      },
+      "equipment": {
+        "artifacts": [
+          {
+            "artifactId": 79543,
+            "level": 21,
             "nameTextMapHash": "518099524",
             "setNameTextMapHash": "2512309395",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_HP",
-              "statValue": 4780
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_HP",
+              "statValue": 4780,
+              "id": 14001
             },
-            "reliquarySubstats": [
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 5.8
               },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 82 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 11.7 },
-              { "appendPropId": "FIGHT_PROP_HP_PERCENT", "statValue": 4.1 }
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 82
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 11.7
+              },
+              {
+                "stat": "FIGHT_PROP_HP_PERCENT",
+                "statValue": 4.1
+              }
+            ],
+            "rolledSubstatsIds": [
+              501233,
+              501244,
+              501222,
+              501031,
+              501221,
+              501242,
+              501242,
+              501243
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15005_4",
-            "equipType": "EQUIP_BRACER"
-          }
-        },
-        {
-          "itemId": 79422,
-          "reliquary": {
-            "level": 17,
-            "mainPropId": 12001,
-            "appendPropIdList": [401094, 401202, 401223, 401244, 401094, 401243]
+            "equipType": "EQUIP_BRACER",
+            "name": "雷鸟的怜悯",
+            "setName": "如雷的盛怒"
           },
-          "flat": {
+          {
+            "artifactId": 79422,
+            "level": 17,
             "nameTextMapHash": "710801004",
             "setNameTextMapHash": "2512309395",
-            "rankLevel": 4,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK",
-              "statValue": 232
+            "stars": 4,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK",
+              "statValue": 232,
+              "id": 12001
             },
-            "reliquarySubstats": [
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_DEFENSE_PERCENT",
+                "stat": "FIGHT_PROP_DEFENSE_PERCENT",
                 "statValue": 11.7
               },
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 2.5 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 5.6 },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 35 }
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 2.5
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 5.6
+              },
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 35
+              }
+            ],
+            "rolledSubstatsIds": [
+              401094,
+              401202,
+              401223,
+              401244,
+              401094,
+              401243
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15005_2",
-            "equipType": "EQUIP_NECKLACE"
-          }
-        },
-        {
-          "itemId": 79452,
-          "reliquary": {
-            "level": 17,
-            "mainPropId": 10004,
-            "appendPropIdList": [401022, 401092, 401084, 401203, 401091, 401084]
+            "equipType": "EQUIP_NECKLACE",
+            "name": "雷灾的孑遗",
+            "setName": "如雷的盛怒"
           },
-          "flat": {
+          {
+            "artifactId": 79452,
+            "level": 17,
             "nameTextMapHash": "1076694404",
             "setNameTextMapHash": "2512309395",
-            "rankLevel": 4,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK_PERCENT",
-              "statValue": 34.8
+            "stars": 4,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK_PERCENT",
+              "statValue": 34.8,
+              "id": 10004
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 191 },
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_DEFENSE_PERCENT",
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 191
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE_PERCENT",
                 "statValue": 8.7
               },
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 37 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 2.8 }
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 37
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 2.8
+              }
+            ],
+            "rolledSubstatsIds": [
+              401022,
+              401092,
+              401084,
+              401203,
+              401091,
+              401084
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15005_5",
-            "equipType": "EQUIP_SHOES"
-          }
-        },
-        {
-          "itemId": 98513,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 15009,
-            "appendPropIdList": [
-              501033, 501202, 501234, 501224, 501233, 501201, 501203, 501221
-            ]
+            "equipType": "EQUIP_SHOES",
+            "name": "雷霆的时计",
+            "setName": "如雷的盛怒"
           },
-          "flat": {
+          {
+            "artifactId": 98513,
+            "level": 21,
             "nameTextMapHash": "1717571964",
             "setNameTextMapHash": "3626268211",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ELEC_ADD_HURT",
-              "statValue": 46.6
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ELEC_ADD_HURT",
+              "statValue": 46.6,
+              "id": 15009
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_HP_PERCENT", "statValue": 5.3 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 9.3 },
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_HP_PERCENT",
+                "statValue": 5.3
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 9.3
+              },
+              {
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 12.3
               },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 13.2 }
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 13.2
+              }
+            ],
+            "rolledSubstatsIds": [
+              501033,
+              501202,
+              501234,
+              501224,
+              501233,
+              501201,
+              501203,
+              501221
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15024_1",
-            "equipType": "EQUIP_RING"
-          }
-        },
-        {
-          "itemId": 79533,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 13007,
-            "appendPropIdList": [
-              501052, 501061, 501233, 501241, 501054, 501244, 501064, 501062
-            ]
+            "equipType": "EQUIP_RING",
+            "name": "涌泉之盏",
+            "setName": "来歆余响"
           },
-          "flat": {
+          {
+            "artifactId": 79533,
+            "level": 21,
             "nameTextMapHash": "151455548",
             "setNameTextMapHash": "2512309395",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_CRITICAL",
-              "statValue": 31.1
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_CRITICAL",
+              "statValue": 31.1,
+              "id": 13007
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_ATTACK", "statValue": 35 },
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_ATTACK_PERCENT",
+                "stat": "FIGHT_PROP_ATTACK",
+                "statValue": 35
+              },
+              {
+                "stat": "FIGHT_PROP_ATTACK_PERCENT",
                 "statValue": 14.6
               },
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 5.8
               },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 40 }
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 40
+              }
+            ],
+            "rolledSubstatsIds": [
+              501052,
+              501061,
+              501233,
+              501241,
+              501054,
+              501244,
+              501064,
+              501062
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15005_3",
-            "equipType": "EQUIP_DRESS"
+            "equipType": "EQUIP_DRESS",
+            "name": "唤雷的头冠",
+            "setName": "如雷的盛怒"
           }
-        },
-        {
-          "itemId": 11405,
-          "weapon": {
-            "level": 90,
-            "promoteLevel": 6,
-            "affixMap": { "111405": 2 }
+        ],
+        "weapon": {
+          "weaponId": 11405,
+          "level": 90,
+          "ascensionLevel": 6,
+          "refinement": {
+            "id": 111405,
+            "level": 2
           },
-          "flat": {
-            "nameTextMapHash": "1321135667",
-            "rankLevel": 4,
-            "weaponStats": [
-              { "appendPropId": "FIGHT_PROP_BASE_ATTACK", "statValue": 510 },
-              { "appendPropId": "FIGHT_PROP_ATTACK_PERCENT", "statValue": 41.3 }
-            ],
-            "itemType": "ITEM_WEAPON",
-            "icon": "UI_EquipIcon_Sword_Rockkiller"
-          }
+          "nameTextMapHash": "1321135667",
+          "stars": 4,
+          "weaponStats": [
+            {
+              "stat": "FIGHT_PROP_BASE_ATTACK",
+              "statValue": 510
+            },
+            {
+              "stat": "FIGHT_PROP_ATTACK_PERCENT",
+              "statValue": 41.3
+            }
+          ],
+          "itemType": "ITEM_WEAPON",
+          "assets": {
+            "icon": "UI_EquipIcon_Sword_Rockkiller",
+            "awakenIcon": "UI_EquipIcon_Sword_Rockkiller_Awaken"
+          },
+          "name": "匣里龙吟"
         }
-      ],
-      "fetterInfo": { "expLevel": 10 }
+      },
+      "friendship": {
+        "level": 10
+      },
+      "assets": {
+        "icon": "UI_AvatarIcon_Keqing",
+        "sideIcon": "UI_AvatarIcon_Side_Keqing",
+        "gachaIcon": "UI_Gacha_AvatarImg_Keqing",
+        "constellations": [
+          "UI_Talent_S_Keqing_01",
+          "UI_Talent_S_Keqing_02",
+          "UI_Talent_U_Keqing_01",
+          "UI_Talent_S_Keqing_03",
+          "UI_Talent_U_Keqing_02",
+          "UI_Talent_S_Keqing_04"
+        ],
+        "talents": {
+          "normalAttack": "Skill_A_01",
+          "elementalSkill": "Skill_S_Keqing_01",
+          "elementalBurst": "Skill_E_Keqing_01"
+        },
+        "costumes": [
+          {
+            "sideIconName": "UI_AvatarIcon_Side_KeqingCostumeFeather",
+            "icon": "UI_AvatarIcon_KeqingCostumeFeather",
+            "art": "UI_Costume_KeqingCostumeFeather"
+          }
+        ]
+      },
+      "costumeId": "",
+      "name": "刻晴"
     },
     {
-      "avatarId": 10000066,
-      "propMap": {
-        "1001": { "type": 1001, "ival": "25648", "val": "25648" },
-        "1002": { "type": 1002, "ival": "6", "val": "6" },
-        "1003": { "type": 1003, "ival": "0" },
-        "1004": { "type": 1004, "ival": "0" },
-        "4001": { "type": 4001, "ival": "80", "val": "80" },
-        "10010": { "type": 10010, "ival": "23200", "val": "23200" },
-        "10049": { "type": 10049, "ival": "12000", "val": "12000" }
+      "characterId": 10000066,
+      "properties": {
+        "xp": {
+          "type": 1001,
+          "val": "25648"
+        },
+        "ascension": {
+          "type": 1002,
+          "val": "6"
+        },
+        "level": {
+          "type": 4001,
+          "val": "80"
+        },
+        "stamina": {
+          "type": 10010,
+          "val": "23200"
+        }
       },
-      "fightPropMap": {
-        "1": 12751.2705078125,
-        "2": 6692.009765625,
-        "3": 0,
-        "4": 726.6383666992188,
-        "5": 357.69000244140625,
-        "6": 0.8442000150680542,
-        "7": 714.5278930664062,
-        "8": 37.029998779296875,
-        "9": 0.18950000405311584,
-        "20": 0.57750004529953,
-        "21": 0,
-        "22": 1.3472000360488892,
-        "23": 1.1619000434875488,
-        "26": 0,
-        "27": 0,
-        "28": 41.959999084472656,
-        "29": 0,
-        "30": 0,
-        "40": 0,
-        "41": 0,
-        "42": 0.4659999907016754,
-        "43": 0,
-        "44": 0,
-        "45": 0,
-        "46": 0,
-        "50": 0,
-        "51": 0,
-        "52": 0,
-        "53": 0,
-        "54": 0,
-        "55": 0,
-        "56": 0,
-        "72": 80,
-        "1002": 0,
-        "1010": 13792.30078125,
-        "2000": 19443.28125,
-        "2001": 1697.756591796875,
-        "2002": 886.9609375,
-        "2003": 0,
-        "2004": 0,
-        "3045": 0,
-        "3046": 1
+      "stats": {
+        "baseHp": {
+          "value": 12751.2705078125
+        },
+        "hpPercentage": {
+          "value": "0"
+        },
+        "baseAtk": {
+          "value": 726.6383666992188
+        },
+        "atkPercentage": {
+          "value": 0.8442000150680542
+        },
+        "baseDef": {
+          "value": 714.5278930664062
+        },
+        "defPercentage": {
+          "value": 0.18950000405311584
+        },
+        "critRate": {
+          "value": 0.57750004529953
+        },
+        "critDamage": {
+          "value": 1.3472000360488892
+        },
+        "energyRecharge": {
+          "value": 1.1619000434875488
+        },
+        "healingBonus": {
+          "value": "0"
+        },
+        "incomingHealingBonus": {
+          "value": "0"
+        },
+        "elementalMastery": {
+          "value": 41.959999084472656
+        },
+        "physicalRes": {
+          "value": "0"
+        },
+        "physicalDamageBonus": {
+          "value": "0"
+        },
+        "pyroDamageBonus": {
+          "value": "0"
+        },
+        "electroDamageBonus": {
+          "value": "0"
+        },
+        "hydroDamageBonus": {
+          "value": 0.4659999907016754
+        },
+        "dendroDamageBonus": {
+          "value": "0"
+        },
+        "anemoDamageBonus": {
+          "value": "0"
+        },
+        "geoDamageBonus": {
+          "value": "0"
+        },
+        "cryoDamageBonus": {
+          "value": "0"
+        },
+        "pyroRes": {
+          "value": "0"
+        },
+        "electroRes": {
+          "value": "0"
+        },
+        "hydroRes": {
+          "value": "0"
+        },
+        "dendroRes": {
+          "value": "0"
+        },
+        "anemoRes": {
+          "value": "0"
+        },
+        "geoRes": {
+          "value": "0"
+        },
+        "cryoRes": {
+          "value": "0"
+        },
+        "pyroEnergyCost": {
+          "value": ""
+        },
+        "electroEnergyCost": {
+          "value": ""
+        },
+        "hydroEnergyCost": {
+          "value": 80
+        },
+        "dendroEnergyCost": {
+          "value": ""
+        },
+        "anemoEnergyCost": {
+          "value": ""
+        },
+        "cryoEnergyCost": {
+          "value": ""
+        },
+        "geoEnergyCost": {
+          "value": ""
+        },
+        "cooldownReduction": {
+          "value": "0"
+        },
+        "shieldStrength": {
+          "value": "0"
+        },
+        "currentPyroEnergy": {
+          "value": ""
+        },
+        "currentElectroEnergy": {
+          "value": ""
+        },
+        "currentHydroEnergy": {
+          "value": ""
+        },
+        "currentDendroEnergy": {
+          "value": ""
+        },
+        "currentAnemoEnergy": {
+          "value": ""
+        },
+        "currentCryoEnergy": {
+          "value": ""
+        },
+        "currentGeoEnergy": {
+          "value": ""
+        },
+        "currentHp": {
+          "value": 13792.30078125
+        },
+        "maxHp": {
+          "value": 19443.28125
+        },
+        "atk": {
+          "value": 1697.756591796875
+        },
+        "def": {
+          "value": 886.9609375
+        }
       },
+      "constellationsList": [],
       "skillDepotId": 6601,
-      "inherentProudSkillList": [662101, 662201, 662301],
-      "skillLevelMap": { "10661": 5, "10662": 10, "10665": 6 },
-      "equipList": [
-        {
-          "itemId": 98543,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 14001,
-            "appendPropIdList": [
-              501094, 501053, 501204, 501061, 501201, 501091, 501062, 501052
-            ]
+      "inherentProudSkillList": [
+        662101,
+        662201,
+        662301
+      ],
+      "skills": {
+        "normalAttacks": {
+          "level": 5,
+          "id": 10661,
+          "assets": {
+            "icon": "Skill_A_01"
           },
-          "flat": {
+          "name": "普通攻击·神里流·转"
+        },
+        "elementalSkill": {
+          "level": 10,
+          "id": 10662,
+          "assets": {
+            "icon": "Skill_S_Ayato_01"
+          },
+          "name": "神里流·镜花"
+        },
+        "elementalBurst": {
+          "level": 6,
+          "id": 10665,
+          "assets": {
+            "icon": "Skill_E_Ayato_01"
+          },
+          "name": "神里流·水囿"
+        }
+      },
+      "skillsExtraLevel": {},
+      "equipment": {
+        "artifacts": [
+          {
+            "artifactId": 98543,
+            "level": 21,
             "nameTextMapHash": "752364252",
             "setNameTextMapHash": "3626268211",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_HP",
-              "statValue": 4780
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_HP",
+              "statValue": 4780,
+              "id": 14001
             },
-            "reliquarySubstats": [
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_DEFENSE_PERCENT",
+                "stat": "FIGHT_PROP_DEFENSE_PERCENT",
                 "statValue": 12.4
               },
-              { "appendPropId": "FIGHT_PROP_ATTACK", "statValue": 33 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 6.6 },
-              { "appendPropId": "FIGHT_PROP_ATTACK_PERCENT", "statValue": 8.7 }
+              {
+                "stat": "FIGHT_PROP_ATTACK",
+                "statValue": 33
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 6.6
+              },
+              {
+                "stat": "FIGHT_PROP_ATTACK_PERCENT",
+                "statValue": 8.7
+              }
+            ],
+            "rolledSubstatsIds": [
+              501094,
+              501053,
+              501204,
+              501061,
+              501201,
+              501091,
+              501062,
+              501052
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15024_4",
-            "equipType": "EQUIP_BRACER"
-          }
-        },
-        {
-          "itemId": 98523,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 12001,
-            "appendPropIdList": [
-              501224, 501204, 501231, 501063, 501204, 501232, 501221, 501203
-            ]
+            "equipType": "EQUIP_BRACER",
+            "name": "魂香之花",
+            "setName": "来歆余响"
           },
-          "flat": {
+          {
+            "artifactId": 98523,
+            "level": 21,
             "nameTextMapHash": "1835743356",
             "setNameTextMapHash": "3626268211",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK",
-              "statValue": 311
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK",
+              "statValue": 311,
+              "id": 12001
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 13.2 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 11.3 },
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 13.2
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 11.3
+              },
+              {
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 9.7
               },
-              { "appendPropId": "FIGHT_PROP_ATTACK_PERCENT", "statValue": 5.3 }
+              {
+                "stat": "FIGHT_PROP_ATTACK_PERCENT",
+                "statValue": 5.3
+              }
+            ],
+            "rolledSubstatsIds": [
+              501224,
+              501204,
+              501231,
+              501063,
+              501204,
+              501232,
+              501221,
+              501203
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15024_2",
-            "equipType": "EQUIP_NECKLACE"
-          }
-        },
-        {
-          "itemId": 98553,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 10004,
-            "appendPropIdList": [
-              501202, 501024, 501244, 501224, 501024, 501024, 501242, 501022
-            ]
+            "equipType": "EQUIP_NECKLACE",
+            "name": "垂玉之叶",
+            "setName": "来歆余响"
           },
-          "flat": {
+          {
+            "artifactId": 98553,
+            "level": 21,
             "nameTextMapHash": "3428908668",
             "setNameTextMapHash": "3626268211",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK_PERCENT",
-              "statValue": 46.6
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK_PERCENT",
+              "statValue": 46.6,
+              "id": 10004
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 3.1 },
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 1135 },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 42 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 7.8 }
+            "substats": [
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 3.1
+              },
+              {
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 1135
+              },
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 42
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 7.8
+              }
+            ],
+            "rolledSubstatsIds": [
+              501202,
+              501024,
+              501244,
+              501224,
+              501024,
+              501024,
+              501242,
+              501022
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15024_5",
-            "equipType": "EQUIP_SHOES"
-          }
-        },
-        {
-          "itemId": 76513,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 15011,
-            "appendPropIdList": [
-              501201, 501083, 501221, 501023, 501021, 501204, 501081, 501024
-            ]
+            "equipType": "EQUIP_SHOES",
+            "name": "祝祀之凭",
+            "setName": "来歆余响"
           },
-          "flat": {
+          {
+            "artifactId": 76513,
+            "level": 21,
             "nameTextMapHash": "2114829356",
             "setNameTextMapHash": "1562601179",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_WATER_ADD_HURT",
-              "statValue": 46.6
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_WATER_ADD_HURT",
+              "statValue": 46.6,
+              "id": 15011
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 6.6 },
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 37 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 5.4 },
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 777 }
+            "substats": [
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 6.6
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 37
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 5.4
+              },
+              {
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 777
+              }
+            ],
+            "rolledSubstatsIds": [
+              501201,
+              501083,
+              501221,
+              501023,
+              501021,
+              501204,
+              501081,
+              501024
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15002_1",
-            "equipType": "EQUIP_RING"
-          }
-        },
-        {
-          "itemId": 98533,
-          "reliquary": {
-            "level": 5,
-            "mainPropId": 13008,
-            "appendPropIdList": [501234, 501051, 501093, 501064]
+            "equipType": "EQUIP_RING",
+            "name": "翠绿猎人的容器",
+            "setName": "翠绿之影"
           },
-          "flat": {
+          {
+            "artifactId": 98533,
+            "level": 5,
             "nameTextMapHash": "2861668684",
             "setNameTextMapHash": "3626268211",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_CRITICAL_HURT",
-              "statValue": 19.9
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_CRITICAL_HURT",
+              "statValue": 19.9,
+              "id": 13008
             },
-            "reliquarySubstats": [
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 6.5
               },
-              { "appendPropId": "FIGHT_PROP_ATTACK", "statValue": 14 },
               {
-                "appendPropId": "FIGHT_PROP_DEFENSE_PERCENT",
+                "stat": "FIGHT_PROP_ATTACK",
+                "statValue": 14
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE_PERCENT",
                 "statValue": 6.6
               },
-              { "appendPropId": "FIGHT_PROP_ATTACK_PERCENT", "statValue": 5.8 }
+              {
+                "stat": "FIGHT_PROP_ATTACK_PERCENT",
+                "statValue": 5.8
+              }
+            ],
+            "rolledSubstatsIds": [
+              501234,
+              501051,
+              501093,
+              501064
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15024_3",
-            "equipType": "EQUIP_DRESS"
+            "equipType": "EQUIP_DRESS",
+            "name": "浮溯之珏",
+            "setName": "来歆余响"
+          }
+        ],
+        "weapon": {
+          "weaponId": 11409,
+          "level": 80,
+          "ascensionLevel": 5,
+          "refinement": {
+            "id": 111409,
+            "level": 0
+          },
+          "nameTextMapHash": "3796905611",
+          "stars": 4,
+          "weaponStats": [
+            {
+              "stat": "FIGHT_PROP_BASE_ATTACK",
+              "statValue": 449
+            },
+            {
+              "stat": "FIGHT_PROP_CRITICAL",
+              "statValue": 25.1
+            }
+          ],
+          "itemType": "ITEM_WEAPON",
+          "assets": {
+            "icon": "UI_EquipIcon_Sword_Bloodstained",
+            "awakenIcon": "UI_EquipIcon_Sword_Bloodstained_Awaken"
+          },
+          "name": "黑剑"
+        }
+      },
+      "friendship": {
+        "level": 5
+      },
+      "assets": {
+        "icon": "UI_AvatarIcon_Ayato",
+        "sideIcon": "UI_AvatarIcon_Side_Ayato",
+        "gachaIcon": "UI_Gacha_AvatarImg_Ayato",
+        "constellations": [
+          "UI_Talent_S_Ayato_01",
+          "UI_Talent_S_Ayato_02",
+          "UI_Talent_U_Ayato_02",
+          "UI_Talent_S_Ayato_03",
+          "UI_Talent_U_Ayato_01",
+          "UI_Talent_S_Ayato_04"
+        ],
+        "talents": {
+          "normalAttack": "Skill_A_01",
+          "elementalSkill": "Skill_S_Ayato_01",
+          "elementalBurst": "Skill_E_Ayato_01"
+        },
+        "costumes": []
+      },
+      "costumeId": "",
+      "name": "神里绫人"
+    },
+    {
+      "characterId": 10000025,
+      "properties": {
+        "xp": {
+          "type": 1001,
+          "val": ""
+        },
+        "ascension": {
+          "type": 1002,
+          "val": "5"
+        },
+        "level": {
+          "type": 4001,
+          "val": "80"
+        },
+        "stamina": {
+          "type": 10010,
+          "val": "23200"
+        }
+      },
+      "stats": {
+        "baseHp": {
+          "value": 9059.529296875
+        },
+        "hpPercentage": {
+          "value": 0.30880001187324524
+        },
+        "baseAtk": {
+          "value": 579.4840087890625
+        },
+        "atkPercentage": {
+          "value": 0.6270999908447266
+        },
+        "baseDef": {
+          "value": 671.415283203125
+        },
+        "defPercentage": {
+          "value": 0.24780000746250153
+        },
+        "critRate": {
+          "value": 0.46289998292922974
+        },
+        "critDamage": {
+          "value": 0.8044999837875366
+        },
+        "energyRecharge": {
+          "value": 1.9983652830123901
+        },
+        "healingBonus": {
+          "value": "0"
+        },
+        "incomingHealingBonus": {
+          "value": "0"
+        },
+        "elementalMastery": {
+          "value": 123.54999542236328
+        },
+        "physicalRes": {
+          "value": "0"
+        },
+        "physicalDamageBonus": {
+          "value": "0"
+        },
+        "pyroDamageBonus": {
+          "value": "0"
+        },
+        "electroDamageBonus": {
+          "value": "0"
+        },
+        "hydroDamageBonus": {
+          "value": 0.6460000276565552
+        },
+        "dendroDamageBonus": {
+          "value": "0"
+        },
+        "anemoDamageBonus": {
+          "value": "0"
+        },
+        "geoDamageBonus": {
+          "value": "0"
+        },
+        "cryoDamageBonus": {
+          "value": "0"
+        },
+        "pyroRes": {
+          "value": "0"
+        },
+        "electroRes": {
+          "value": "0"
+        },
+        "hydroRes": {
+          "value": "0"
+        },
+        "dendroRes": {
+          "value": "0"
+        },
+        "anemoRes": {
+          "value": "0"
+        },
+        "geoRes": {
+          "value": "0"
+        },
+        "cryoRes": {
+          "value": "0"
+        },
+        "pyroEnergyCost": {
+          "value": ""
+        },
+        "electroEnergyCost": {
+          "value": ""
+        },
+        "hydroEnergyCost": {
+          "value": 80
+        },
+        "dendroEnergyCost": {
+          "value": ""
+        },
+        "anemoEnergyCost": {
+          "value": ""
+        },
+        "cryoEnergyCost": {
+          "value": ""
+        },
+        "geoEnergyCost": {
+          "value": ""
+        },
+        "cooldownReduction": {
+          "value": "0"
+        },
+        "shieldStrength": {
+          "value": "0"
+        },
+        "currentPyroEnergy": {
+          "value": ""
+        },
+        "currentElectroEnergy": {
+          "value": ""
+        },
+        "currentHydroEnergy": {
+          "value": 80
+        },
+        "currentDendroEnergy": {
+          "value": ""
+        },
+        "currentAnemoEnergy": {
+          "value": ""
+        },
+        "currentCryoEnergy": {
+          "value": ""
+        },
+        "currentGeoEnergy": {
+          "value": ""
+        },
+        "currentHp": {
+          "value": 17366.0703125
+        },
+        "maxHp": {
+          "value": 17366.0703125
+        },
+        "atk": {
+          "value": 1240.87841796875
+        },
+        "def": {
+          "value": 944.281982421875
+        }
+      },
+      "constellationsList": [
+        {
+          "id": 251,
+          "name": "重帘留香",
+          "assets": {
+            "icon": "UI_Talent_S_Xingqiu_01"
           }
         },
         {
-          "itemId": 11409,
-          "weapon": {
-            "level": 80,
-            "promoteLevel": 5,
-            "affixMap": { "111409": 0 }
-          },
-          "flat": {
-            "nameTextMapHash": "3796905611",
-            "rankLevel": 4,
-            "weaponStats": [
-              { "appendPropId": "FIGHT_PROP_BASE_ATTACK", "statValue": 449 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 25.1 }
-            ],
-            "itemType": "ITEM_WEAPON",
-            "icon": "UI_EquipIcon_Sword_Bloodstained"
+          "id": 252,
+          "name": "天青现虹",
+          "assets": {
+            "icon": "UI_Talent_S_Xingqiu_02"
+          }
+        },
+        {
+          "id": 253,
+          "name": "织诗成锦",
+          "assets": {
+            "icon": "UI_Talent_U_Xingqiu_01"
+          }
+        },
+        {
+          "id": 254,
+          "name": "孤舟斩蛟",
+          "assets": {
+            "icon": "UI_Talent_S_Xingqiu_03"
+          }
+        },
+        {
+          "id": 255,
+          "name": "雨深闭门",
+          "assets": {
+            "icon": "UI_Talent_U_Xingqiu_02"
+          }
+        },
+        {
+          "id": 256,
+          "name": "万文集此",
+          "assets": {
+            "icon": "UI_Talent_S_Xingqiu_04"
           }
         }
       ],
-      "fetterInfo": { "expLevel": 5 }
-    },
-    {
-      "avatarId": 10000025,
-      "propMap": {
-        "1001": { "type": 1001, "ival": "0" },
-        "1002": { "type": 1002, "ival": "5", "val": "5" },
-        "1003": { "type": 1003, "ival": "0" },
-        "1004": { "type": 1004, "ival": "0" },
-        "4001": { "type": 4001, "ival": "80", "val": "80" },
-        "10010": { "type": 10010, "ival": "23200", "val": "23200" },
-        "10049": { "type": 10049, "ival": "12000", "val": "12000" }
-      },
-      "talentIdList": [251, 252, 253, 254, 255, 256],
-      "fightPropMap": {
-        "1": 9059.529296875,
-        "2": 5508.9599609375,
-        "3": 0.30880001187324524,
-        "4": 579.4840087890625,
-        "5": 298,
-        "6": 0.6270999908447266,
-        "7": 671.415283203125,
-        "8": 106.48999786376953,
-        "9": 0.24780000746250153,
-        "20": 0.46289998292922974,
-        "21": 0,
-        "22": 0.8044999837875366,
-        "23": 1.9983652830123901,
-        "26": 0,
-        "27": 0,
-        "28": 123.54999542236328,
-        "29": 0,
-        "30": 0,
-        "40": 0,
-        "41": 0,
-        "42": 0.6460000276565552,
-        "43": 0,
-        "44": 0,
-        "45": 0,
-        "46": 0,
-        "50": 0,
-        "51": 0,
-        "52": 0,
-        "53": 0,
-        "54": 0,
-        "55": 0,
-        "56": 0,
-        "72": 80,
-        "1002": 80,
-        "1010": 17366.0703125,
-        "2000": 17366.0703125,
-        "2001": 1240.87841796875,
-        "2002": 944.281982421875,
-        "2003": 0,
-        "2004": 0,
-        "3045": 0,
-        "3046": 1
-      },
       "skillDepotId": 2501,
-      "inherentProudSkillList": [252101, 252201, 252301],
-      "skillLevelMap": { "10381": 4, "10382": 8, "10385": 8 },
-      "proudSkillExtraLevelMap": { "2532": 3, "2539": 3 },
-      "equipList": [
-        {
-          "itemId": 94544,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 14001,
-            "appendPropIdList": [
-              501084, 501032, 501223, 501094, 501093, 501034, 501084, 501091,
-              501223
-            ]
+      "inherentProudSkillList": [
+        252101,
+        252201,
+        252301
+      ],
+      "skills": {
+        "normalAttacks": {
+          "level": 4,
+          "id": 10381,
+          "assets": {
+            "icon": "Skill_A_01"
           },
-          "flat": {
+          "name": "普通攻击·古华剑法"
+        },
+        "elementalSkill": {
+          "level": 8,
+          "id": 10382,
+          "assets": {
+            "icon": "Skill_S_Xingqiu_01"
+          },
+          "name": "古华剑·画雨笼山"
+        },
+        "elementalBurst": {
+          "level": 8,
+          "id": 10385,
+          "assets": {
+            "icon": "Skill_E_Xingqiu_01"
+          },
+          "name": "古华剑·裁雨留虹"
+        }
+      },
+      "skillsExtraLevel": {
+        "2532": 3,
+        "2539": 3
+      },
+      "equipment": {
+        "artifacts": [
+          {
+            "artifactId": 94544,
+            "level": 21,
             "nameTextMapHash": "600966780",
             "setNameTextMapHash": "2276480763",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_HP",
-              "statValue": 4780
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_HP",
+              "statValue": 4780,
+              "id": 14001
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 46 },
-              { "appendPropId": "FIGHT_PROP_HP_PERCENT", "statValue": 10.5 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 14 },
-              { "appendPropId": "FIGHT_PROP_DEFENSE_PERCENT", "statValue": 19 }
+            "substats": [
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 46
+              },
+              {
+                "stat": "FIGHT_PROP_HP_PERCENT",
+                "statValue": 10.5
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 14
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE_PERCENT",
+                "statValue": 19
+              }
+            ],
+            "rolledSubstatsIds": [
+              501084,
+              501032,
+              501223,
+              501094,
+              501093,
+              501034,
+              501084,
+              501091,
+              501223
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15020_4",
-            "equipType": "EQUIP_BRACER"
-          }
-        },
-        {
-          "itemId": 94524,
-          "reliquary": {
-            "level": 20,
-            "mainPropId": 12001,
-            "appendPropIdList": [
-              501234, 501062, 501224, 501203, 501233, 501234, 501204, 501063
-            ]
+            "equipType": "EQUIP_BRACER",
+            "name": "明威之镡",
+            "setName": "绝缘之旗印"
           },
-          "flat": {
+          {
+            "artifactId": 94524,
+            "level": 20,
             "nameTextMapHash": "481604708",
             "setNameTextMapHash": "2276480763",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK",
-              "statValue": 298
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK",
+              "statValue": 298,
+              "id": 12001
             },
-            "reliquarySubstats": [
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 18.8
               },
-              { "appendPropId": "FIGHT_PROP_ATTACK_PERCENT", "statValue": 9.9 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 7.8 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 7.4 }
+              {
+                "stat": "FIGHT_PROP_ATTACK_PERCENT",
+                "statValue": 9.9
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 7.8
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 7.4
+              }
+            ],
+            "rolledSubstatsIds": [
+              501234,
+              501062,
+              501224,
+              501203,
+              501233,
+              501234,
+              501204,
+              501063
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15020_2",
-            "equipType": "EQUIP_NECKLACE"
-          }
-        },
-        {
-          "itemId": 94453,
-          "reliquary": {
-            "level": 17,
-            "mainPropId": 10004,
-            "appendPropIdList": [
-              401203, 401034, 401221, 401022, 401032, 401031, 401221
-            ]
+            "equipType": "EQUIP_NECKLACE",
+            "name": "切落之羽",
+            "setName": "绝缘之旗印"
           },
-          "flat": {
+          {
+            "artifactId": 94453,
+            "level": 17,
             "nameTextMapHash": "889498756",
             "setNameTextMapHash": "2276480763",
-            "rankLevel": 4,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK_PERCENT",
-              "statValue": 34.8
+            "stars": 4,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK_PERCENT",
+              "statValue": 34.8,
+              "id": 10004
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 2.8 },
-              { "appendPropId": "FIGHT_PROP_HP_PERCENT", "statValue": 11.7 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 8.7 },
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 191 }
+            "substats": [
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 2.8
+              },
+              {
+                "stat": "FIGHT_PROP_HP_PERCENT",
+                "statValue": 11.7
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 8.7
+              },
+              {
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 191
+              }
+            ],
+            "rolledSubstatsIds": [
+              401203,
+              401034,
+              401221,
+              401022,
+              401032,
+              401031,
+              401221
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15020_5",
-            "equipType": "EQUIP_SHOES"
-          }
-        },
-        {
-          "itemId": 94513,
-          "reliquary": {
-            "level": 20,
-            "mainPropId": 15011,
-            "appendPropIdList": [
-              501031, 501244, 501092, 501082, 501032, 501242, 501241
-            ]
+            "equipType": "EQUIP_SHOES",
+            "name": "雷云之笼",
+            "setName": "绝缘之旗印"
           },
-          "flat": {
+          {
+            "artifactId": 94513,
+            "level": 20,
             "nameTextMapHash": "3102891332",
             "setNameTextMapHash": "2276480763",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_WATER_ADD_HURT",
-              "statValue": 44.6
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_WATER_ADD_HURT",
+              "statValue": 44.6,
+              "id": 15011
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_HP_PERCENT", "statValue": 8.7 },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 58 },
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_DEFENSE_PERCENT",
+                "stat": "FIGHT_PROP_HP_PERCENT",
+                "statValue": 8.7
+              },
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 58
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE_PERCENT",
                 "statValue": 5.8
               },
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 19 }
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 19
+              }
+            ],
+            "rolledSubstatsIds": [
+              501031,
+              501244,
+              501092,
+              501082,
+              501032,
+              501242,
+              501241
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15020_1",
-            "equipType": "EQUIP_RING"
-          }
-        },
-        {
-          "itemId": 76533,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 13007,
-            "appendPropIdList": [
-              501232, 501023, 501243, 501082, 501084, 501243, 501244, 501023
-            ]
+            "equipType": "EQUIP_RING",
+            "name": "绯花之壶",
+            "setName": "绝缘之旗印"
           },
-          "flat": {
+          {
+            "artifactId": 76533,
+            "level": 21,
             "nameTextMapHash": "2442374844",
             "setNameTextMapHash": "1562601179",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_CRITICAL",
-              "statValue": 31.1
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_CRITICAL",
+              "statValue": 31.1,
+              "id": 13007
             },
-            "reliquarySubstats": [
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 5.2
               },
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 538 },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 65 },
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 42 }
+              {
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 538
+              },
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 65
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 42
+              }
+            ],
+            "rolledSubstatsIds": [
+              501232,
+              501023,
+              501243,
+              501082,
+              501084,
+              501243,
+              501244,
+              501023
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15002_3",
-            "equipType": "EQUIP_DRESS"
+            "equipType": "EQUIP_DRESS",
+            "name": "翠绿的猎人之冠",
+            "setName": "翠绿之影"
           }
-        },
-        {
-          "itemId": 11401,
-          "weapon": {
-            "level": 80,
-            "promoteLevel": 5,
-            "affixMap": { "111401": 2 }
+        ],
+        "weapon": {
+          "weaponId": 11401,
+          "level": 80,
+          "ascensionLevel": 5,
+          "refinement": {
+            "id": 111401,
+            "level": 2
           },
-          "flat": {
-            "nameTextMapHash": "2474354867",
-            "rankLevel": 4,
-            "weaponStats": [
-              { "appendPropId": "FIGHT_PROP_BASE_ATTACK", "statValue": 401 },
-              {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
-                "statValue": 55.9
-              }
-            ],
-            "itemType": "ITEM_WEAPON",
-            "icon": "UI_EquipIcon_Sword_Zephyrus"
+          "nameTextMapHash": "2474354867",
+          "stars": 4,
+          "weaponStats": [
+            {
+              "stat": "FIGHT_PROP_BASE_ATTACK",
+              "statValue": 401
+            },
+            {
+              "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
+              "statValue": 55.9
+            }
+          ],
+          "itemType": "ITEM_WEAPON",
+          "assets": {
+            "icon": "UI_EquipIcon_Sword_Zephyrus",
+            "awakenIcon": "UI_EquipIcon_Sword_Zephyrus_Awaken"
+          },
+          "name": "西风剑"
+        }
+      },
+      "friendship": {
+        "level": 4
+      },
+      "assets": {
+        "icon": "UI_AvatarIcon_Xingqiu",
+        "sideIcon": "UI_AvatarIcon_Side_Xingqiu",
+        "gachaIcon": "UI_Gacha_AvatarImg_Xingqiu",
+        "constellations": [
+          "UI_Talent_S_Xingqiu_01",
+          "UI_Talent_S_Xingqiu_02",
+          "UI_Talent_U_Xingqiu_01",
+          "UI_Talent_S_Xingqiu_03",
+          "UI_Talent_U_Xingqiu_02",
+          "UI_Talent_S_Xingqiu_04"
+        ],
+        "talents": {
+          "normalAttack": "Skill_A_01",
+          "elementalSkill": "Skill_S_Xingqiu_01",
+          "elementalBurst": "Skill_E_Xingqiu_01"
+        },
+        "costumes": []
+      },
+      "costumeId": "",
+      "name": "行秋"
+    },
+    {
+      "characterId": 10000032,
+      "properties": {
+        "xp": {
+          "type": 1001,
+          "val": "70267"
+        },
+        "ascension": {
+          "type": 1002,
+          "val": "6"
+        },
+        "level": {
+          "type": 4001,
+          "val": "80"
+        },
+        "stamina": {
+          "type": 10010,
+          "val": "23200"
+        }
+      },
+      "stats": {
+        "baseHp": {
+          "value": 11538.82421875
+        },
+        "hpPercentage": {
+          "value": 0.17480000853538513
+        },
+        "baseAtk": {
+          "value": 687.5249633789062
+        },
+        "atkPercentage": {
+          "value": 0.9727999567985535
+        },
+        "baseDef": {
+          "value": 717.836669921875
+        },
+        "defPercentage": {
+          "value": "0"
+        },
+        "critRate": {
+          "value": 0.12389999628067017
+        },
+        "critDamage": {
+          "value": 1.051800012588501
+        },
+        "energyRecharge": {
+          "value": 2.0046000480651855
+        },
+        "healingBonus": {
+          "value": 0.2980000078678131
+        },
+        "incomingHealingBonus": {
+          "value": "0"
+        },
+        "elementalMastery": {
+          "value": 20.979999542236328
+        },
+        "physicalRes": {
+          "value": "0"
+        },
+        "physicalDamageBonus": {
+          "value": "0"
+        },
+        "pyroDamageBonus": {
+          "value": "0"
+        },
+        "electroDamageBonus": {
+          "value": "0"
+        },
+        "hydroDamageBonus": {
+          "value": "0"
+        },
+        "dendroDamageBonus": {
+          "value": "0"
+        },
+        "anemoDamageBonus": {
+          "value": "0"
+        },
+        "geoDamageBonus": {
+          "value": "0"
+        },
+        "cryoDamageBonus": {
+          "value": "0"
+        },
+        "pyroRes": {
+          "value": "0"
+        },
+        "electroRes": {
+          "value": "0"
+        },
+        "hydroRes": {
+          "value": "0"
+        },
+        "dendroRes": {
+          "value": "0"
+        },
+        "anemoRes": {
+          "value": "0"
+        },
+        "geoRes": {
+          "value": "0"
+        },
+        "cryoRes": {
+          "value": "0"
+        },
+        "pyroEnergyCost": {
+          "value": 60
+        },
+        "electroEnergyCost": {
+          "value": ""
+        },
+        "hydroEnergyCost": {
+          "value": ""
+        },
+        "dendroEnergyCost": {
+          "value": ""
+        },
+        "anemoEnergyCost": {
+          "value": ""
+        },
+        "cryoEnergyCost": {
+          "value": ""
+        },
+        "geoEnergyCost": {
+          "value": ""
+        },
+        "cooldownReduction": {
+          "value": "0"
+        },
+        "shieldStrength": {
+          "value": "0"
+        },
+        "currentPyroEnergy": {
+          "value": 60
+        },
+        "currentElectroEnergy": {
+          "value": ""
+        },
+        "currentHydroEnergy": {
+          "value": ""
+        },
+        "currentDendroEnergy": {
+          "value": ""
+        },
+        "currentAnemoEnergy": {
+          "value": ""
+        },
+        "currentCryoEnergy": {
+          "value": ""
+        },
+        "currentGeoEnergy": {
+          "value": ""
+        },
+        "currentHp": {
+          "value": 16118.365234375
+        },
+        "maxHp": {
+          "value": 18658.0703125
+        },
+        "atk": {
+          "value": 1754.8792724609375
+        },
+        "def": {
+          "value": 854.4066772460938
+        }
+      },
+      "constellationsList": [
+        {
+          "id": 321,
+          "name": "冒险憧憬",
+          "assets": {
+            "icon": "UI_Talent_S_Bennett_01"
           }
         }
       ],
-      "fetterInfo": { "expLevel": 4 }
-    },
-    {
-      "avatarId": 10000032,
-      "propMap": {
-        "1001": { "type": 1001, "ival": "70267", "val": "70267" },
-        "1002": { "type": 1002, "ival": "6", "val": "6" },
-        "1003": { "type": 1003, "ival": "0" },
-        "1004": { "type": 1004, "ival": "0" },
-        "4001": { "type": 4001, "ival": "80", "val": "80" },
-        "10010": { "type": 10010, "ival": "23200", "val": "23200" },
-        "10049": { "type": 10049, "ival": "12000", "val": "12000" }
-      },
-      "talentIdList": [321],
-      "fightPropMap": {
-        "1": 11538.82421875,
-        "2": 5102.259765625,
-        "3": 0.17480000853538513,
-        "4": 687.5249633789062,
-        "5": 398.5299987792969,
-        "6": 0.9727999567985535,
-        "7": 717.836669921875,
-        "8": 136.5699920654297,
-        "20": 0.12389999628067017,
-        "21": 0,
-        "22": 1.051800012588501,
-        "23": 2.0046000480651855,
-        "26": 0.2980000078678131,
-        "27": 0,
-        "28": 20.979999542236328,
-        "29": 0,
-        "30": 0,
-        "40": 0,
-        "41": 0,
-        "42": 0,
-        "43": 0,
-        "44": 0,
-        "45": 0,
-        "46": 0,
-        "50": 0,
-        "51": 0,
-        "52": 0,
-        "53": 0,
-        "54": 0,
-        "55": 0,
-        "56": 0,
-        "70": 60,
-        "1000": 60,
-        "1010": 16118.365234375,
-        "2000": 18658.0703125,
-        "2001": 1754.8792724609375,
-        "2002": 854.4066772460938,
-        "2003": 0,
-        "2004": 0,
-        "3045": 0,
-        "3046": 1
-      },
       "skillDepotId": 3201,
-      "inherentProudSkillList": [322101, 322201, 322301],
-      "skillLevelMap": { "10321": 1, "10322": 5, "10323": 9 },
-      "equipList": [
-        {
-          "itemId": 81543,
-          "reliquary": {
-            "level": 17,
-            "mainPropId": 14001,
-            "appendPropIdList": [
-              501234, 501204, 501084, 501222, 501082, 501224, 501203
-            ]
+      "inherentProudSkillList": [
+        322101,
+        322201,
+        322301
+      ],
+      "skills": {
+        "normalAttacks": {
+          "level": 1,
+          "id": 10321,
+          "assets": {
+            "icon": "Skill_A_01"
           },
-          "flat": {
+          "name": "普通攻击·好运剑"
+        },
+        "elementalSkill": {
+          "level": 5,
+          "id": 10322,
+          "assets": {
+            "icon": "Skill_S_Bennett_01"
+          },
+          "name": "热情过载"
+        },
+        "elementalBurst": {
+          "level": 9,
+          "id": 10323,
+          "assets": {
+            "icon": "Skill_E_Bennett_01"
+          },
+          "name": "美妙旅程"
+        }
+      },
+      "skillsExtraLevel": {},
+      "equipment": {
+        "artifacts": [
+          {
+            "artifactId": 81543,
+            "level": 17,
             "nameTextMapHash": "3120588556",
             "setNameTextMapHash": "1751039235",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_HP",
-              "statValue": 3967
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_HP",
+              "statValue": 3967,
+              "id": 14001
             },
-            "reliquarySubstats": [
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 6.5
               },
-              { "appendPropId": "FIGHT_PROP_CRITICAL", "statValue": 7.4 },
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 42 },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 14 }
+              {
+                "stat": "FIGHT_PROP_CRITICAL",
+                "statValue": 7.4
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 42
+              },
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 14
+              }
+            ],
+            "rolledSubstatsIds": [
+              501234,
+              501204,
+              501084,
+              501222,
+              501082,
+              501224,
+              501203
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15007_4",
-            "equipType": "EQUIP_BRACER"
-          }
-        },
-        {
-          "itemId": 81523,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 12001,
-            "appendPropIdList": [
-              501233, 501221, 501082, 501032, 501083, 501222, 501222, 501032
-            ]
+            "equipType": "EQUIP_BRACER",
+            "name": "宗室之花",
+            "setName": "昔日宗室之仪"
           },
-          "flat": {
+          {
+            "artifactId": 81523,
+            "level": 21,
             "nameTextMapHash": "815154916",
             "setNameTextMapHash": "1751039235",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK",
-              "statValue": 311
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK",
+              "statValue": 311,
+              "id": 12001
             },
-            "reliquarySubstats": [
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 5.8
               },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 17.9 },
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 39 },
-              { "appendPropId": "FIGHT_PROP_HP_PERCENT", "statValue": 9.3 }
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 17.9
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 39
+              },
+              {
+                "stat": "FIGHT_PROP_HP_PERCENT",
+                "statValue": 9.3
+              }
+            ],
+            "rolledSubstatsIds": [
+              501233,
+              501221,
+              501082,
+              501032,
+              501083,
+              501222,
+              501222,
+              501032
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15007_2",
-            "equipType": "EQUIP_NECKLACE"
-          }
-        },
-        {
-          "itemId": 81553,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 10004,
-            "appendPropIdList": [
-              501054, 501233, 501081, 501022, 501052, 501021, 501051, 501081
-            ]
+            "equipType": "EQUIP_NECKLACE",
+            "name": "宗室之翎",
+            "setName": "昔日宗室之仪"
           },
-          "flat": {
+          {
+            "artifactId": 81553,
+            "level": 21,
             "nameTextMapHash": "514109556",
             "setNameTextMapHash": "1751039235",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK_PERCENT",
-              "statValue": 46.6
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK_PERCENT",
+              "statValue": 46.6,
+              "id": 10004
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_ATTACK", "statValue": 49 },
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_ATTACK",
+                "statValue": 49
+              },
+              {
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 5.8
               },
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 32 },
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 448 }
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 32
+              },
+              {
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 448
+              }
+            ],
+            "rolledSubstatsIds": [
+              501054,
+              501233,
+              501081,
+              501022,
+              501052,
+              501021,
+              501051,
+              501081
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15007_5",
-            "equipType": "EQUIP_SHOES"
-          }
-        },
-        {
-          "itemId": 81513,
-          "reliquary": {
-            "level": 21,
-            "mainPropId": 15004,
-            "appendPropIdList": [
-              501054, 501232, 501224, 501243, 501231, 501054, 501224, 501224
-            ]
+            "equipType": "EQUIP_SHOES",
+            "name": "宗室时计",
+            "setName": "昔日宗室之仪"
           },
-          "flat": {
+          {
+            "artifactId": 81513,
+            "level": 21,
             "nameTextMapHash": "1840901268",
             "setNameTextMapHash": "1751039235",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_ATTACK_PERCENT",
-              "statValue": 46.6
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_ATTACK_PERCENT",
+              "statValue": 46.6,
+              "id": 15004
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_ATTACK", "statValue": 39 },
+            "substats": [
               {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "stat": "FIGHT_PROP_ATTACK",
+                "statValue": 39
+              },
+              {
+                "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
                 "statValue": 9.7
               },
-              { "appendPropId": "FIGHT_PROP_CRITICAL_HURT", "statValue": 23.3 },
-              { "appendPropId": "FIGHT_PROP_ELEMENT_MASTERY", "statValue": 21 }
+              {
+                "stat": "FIGHT_PROP_CRITICAL_HURT",
+                "statValue": 23.3
+              },
+              {
+                "stat": "FIGHT_PROP_ELEMENT_MASTERY",
+                "statValue": 21
+              }
+            ],
+            "rolledSubstatsIds": [
+              501054,
+              501232,
+              501224,
+              501243,
+              501231,
+              501054,
+              501224,
+              501224
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15007_1",
-            "equipType": "EQUIP_RING"
-          }
-        },
-        {
-          "itemId": 91533,
-          "reliquary": {
-            "level": 17,
-            "mainPropId": 13009,
-            "appendPropIdList": [
-              501022, 501061, 501084, 501031, 501031, 501021, 501022
-            ]
+            "equipType": "EQUIP_RING",
+            "name": "宗室银瓮",
+            "setName": "昔日宗室之仪"
           },
-          "flat": {
+          {
+            "artifactId": 91533,
+            "level": 17,
             "nameTextMapHash": "3587145716",
             "setNameTextMapHash": "1337666507",
-            "rankLevel": 5,
-            "reliquaryMainstat": {
-              "mainPropId": "FIGHT_PROP_HEAL_ADD",
-              "statValue": 29.8
+            "stars": 5,
+            "mainstat": {
+              "stat": "FIGHT_PROP_HEAL_ADD",
+              "statValue": 29.8,
+              "id": 13009
             },
-            "reliquarySubstats": [
-              { "appendPropId": "FIGHT_PROP_HP", "statValue": 687 },
-              { "appendPropId": "FIGHT_PROP_ATTACK_PERCENT", "statValue": 4.1 },
-              { "appendPropId": "FIGHT_PROP_DEFENSE", "statValue": 23 },
-              { "appendPropId": "FIGHT_PROP_HP_PERCENT", "statValue": 8.2 }
+            "substats": [
+              {
+                "stat": "FIGHT_PROP_HP",
+                "statValue": 687
+              },
+              {
+                "stat": "FIGHT_PROP_ATTACK_PERCENT",
+                "statValue": 4.1
+              },
+              {
+                "stat": "FIGHT_PROP_DEFENSE",
+                "statValue": 23
+              },
+              {
+                "stat": "FIGHT_PROP_HP_PERCENT",
+                "statValue": 8.2
+              }
+            ],
+            "rolledSubstatsIds": [
+              501022,
+              501061,
+              501084,
+              501031,
+              501031,
+              501021,
+              501022
             ],
             "itemType": "ITEM_RELIQUARY",
             "icon": "UI_RelicIcon_15017_3",
-            "equipType": "EQUIP_DRESS"
+            "equipType": "EQUIP_DRESS",
+            "name": "将帅兜鍪",
+            "setName": "千岩牢固"
           }
-        },
-        {
-          "itemId": 11413,
-          "weapon": {
-            "level": 90,
-            "promoteLevel": 6,
-            "affixMap": { "111413": 0 }
+        ],
+        "weapon": {
+          "weaponId": 11413,
+          "level": 90,
+          "ascensionLevel": 6,
+          "refinement": {
+            "id": 111413,
+            "level": 0
           },
-          "flat": {
-            "nameTextMapHash": "2749853923",
-            "rankLevel": 4,
-            "weaponStats": [
-              { "appendPropId": "FIGHT_PROP_BASE_ATTACK", "statValue": 510 },
-              {
-                "appendPropId": "FIGHT_PROP_CHARGE_EFFICIENCY",
-                "statValue": 45.9
-              }
-            ],
-            "itemType": "ITEM_WEAPON",
-            "icon": "UI_EquipIcon_Sword_Magnum"
-          }
+          "nameTextMapHash": "2749853923",
+          "stars": 4,
+          "weaponStats": [
+            {
+              "stat": "FIGHT_PROP_BASE_ATTACK",
+              "statValue": 510
+            },
+            {
+              "stat": "FIGHT_PROP_CHARGE_EFFICIENCY",
+              "statValue": 45.9
+            }
+          ],
+          "itemType": "ITEM_WEAPON",
+          "assets": {
+            "icon": "UI_EquipIcon_Sword_Magnum",
+            "awakenIcon": "UI_EquipIcon_Sword_Magnum_Awaken"
+          },
+          "name": "腐殖之剑"
         }
-      ],
-      "fetterInfo": { "expLevel": 10 }
+      },
+      "friendship": {
+        "level": 10
+      },
+      "assets": {
+        "icon": "UI_AvatarIcon_Bennett",
+        "sideIcon": "UI_AvatarIcon_Side_Bennett",
+        "gachaIcon": "UI_Gacha_AvatarImg_Bennett",
+        "constellations": [
+          "UI_Talent_S_Bennett_01",
+          "UI_Talent_S_Bennett_02",
+          "UI_Talent_U_Bennett_01",
+          "UI_Talent_S_Bennett_03",
+          "UI_Talent_U_Bennett_02",
+          "UI_Talent_S_Bennett_04"
+        ],
+        "talents": {
+          "normalAttack": "Skill_A_01",
+          "elementalSkill": "Skill_S_Bennett_01",
+          "elementalBurst": "Skill_E_Bennett_01"
+        },
+        "costumes": []
+      },
+      "costumeId": "",
+      "name": "班尼特"
     }
   ]
 }

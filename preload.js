@@ -78,14 +78,140 @@ contextBridge.exposeInMainWorld("myAPI", {
       }
     );
   },
+  /**
+   * 角色卡片
+   * @param {*} i
+   */
   //请求发送角色卡片
   askForCharacterCards: (i) => {
     ipcRenderer.send("askForCharacterCards", i);
   },
   //接受角色卡片信息
-  sendCharacterCards: () => {
+  CardRender: () => {
     ipcRenderer.on("sendCharacterCards", (event, CharacterCards) => {
-      // console.log(CharacterCards.constellationsList[0].assets);
+      // 角色名字;
+      const name = document.getElementById("name");
+      name.innerHTML = CharacterCards.name;
+      //角色等级
+      const lv = document.getElementById("lv");
+      lv.innerHTML = "Lv:90/" + CharacterCards.properties.level.val;
+      //背景图片
+      //TODO:背景图片根据角色属性调整
+      const characterCard = document.getElementById("characterCard");
+      characterCard.style.backgroundImage =
+        "linear-gradient(to right,rgba(157, 157, 157, 0),rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)),url('https://enka.network/ui/" +
+        CharacterCards.assets.gachaIcon +
+        ".png'),url('./assets/cryo.png')";
+
+      //命座
+      //TODO:命座发光
+      const cs1 = document.getElementById("cs1");
+      cs1.style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.assets.constellations[0] +
+        ".png)";
+      const cs2 = document.getElementById("cs2");
+      cs2.style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.assets.constellations[1] +
+        ".png)";
+      const cs3 = document.getElementById("cs3");
+      cs3.style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.assets.constellations[2] +
+        ".png)";
+      const cs4 = document.getElementById("cs4");
+      cs4.style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.assets.constellations[3] +
+        ".png)";
+      const cs5 = document.getElementById("cs5");
+      cs5.style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.assets.constellations[4] +
+        ".png)";
+      const cs6 = document.getElementById("cs6");
+      cs6.style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.assets.constellations[5] +
+        ".png)";
+      //技能图片
+
+      const sk1 = document.getElementById("sk1");
+      sk1.style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.assets.talents.normalAttack +
+        ".png)";
+      const sk2 = document.getElementById("sk2");
+      sk2.style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.assets.talents.elementalSkill +
+        ".png)";
+      const sk3 = document.getElementById("sk3");
+      sk3.style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.assets.talents.elementalBurst +
+        ".png)";
+      //技能等级
+      const skillWord = document.getElementsByClassName("skillWord");
+      skillWord[0].innerHTML = CharacterCards.skills.normalAttacks.level;
+      skillWord[1].innerHTML = CharacterCards.skills.elementalSkill.level;
+      skillWord[2].innerHTML = CharacterCards.skills.elementalBurst.level;
+      //武器图片
+      const weaponImg = document.getElementById("weapon-img");
+      weaponImg.style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.equipment.weapon.assets.icon +
+        ".png)";
+      //武器名字
+      const weaponName = document.getElementById("weapon-name");
+      weaponName.innerHTML = CharacterCards.equipment.weapon.name;
+      //武器等级
+      const weaponLv = document.getElementById("weapon-lv");
+      weaponLv.innerHTML = "Lv:90/" + CharacterCards.equipment.weapon.level;
+      //角色属性
+      const characterAttr = document.getElementsByClassName("statsNum");
+      characterAttr[0].innerHTML = Math.floor(
+        CharacterCards.stats.baseHp.value
+      );
+      characterAttr[1].innerHTML = Math.floor(
+        CharacterCards.stats.baseAtk.value
+      );
+      characterAttr[2].innerHTML = Math.floor(
+        CharacterCards.stats.baseDef.value
+      );
+      characterAttr[3].innerHTML = Math.floor(
+        CharacterCards.stats.elementalMastery.value
+      );
+      characterAttr[4].innerHTML =
+        Math.floor(CharacterCards.stats.critRate.value * 100) + "%";
+      characterAttr[5].innerHTML =
+        Math.floor(CharacterCards.stats.critDamage.value * 100) + "%";
+      characterAttr[6].innerHTML =
+        Math.floor(CharacterCards.stats.energyRecharge.value * 100) + "%";
+      //特殊角色属性 TODO:根据角色属性调整
+      //圣遗物图片
+      artiImg = document.getElementsByClassName("artiImg");
+      artiImg[0].style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.equipment.artifacts[0].icon +
+        ".png)";
+      artiImg[1].style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.equipment.artifacts[1].icon +
+        ".png)";
+      artiImg[2].style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.equipment.artifacts[2].icon +
+        ".png)";
+      artiImg[3].style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.equipment.artifacts[3].icon +
+        ".png)";
+      artiImg[4].style.backgroundImage =
+        "url(https://enka.network/ui/" +
+        CharacterCards.equipment.artifacts[4].icon +
+        ".png)";
     });
   },
 });
