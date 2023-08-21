@@ -6,7 +6,7 @@
 #characterCard {
   position: absolute;
   top: 180px;
-  left: 150px;
+  left: 120px;
   width: 930px;
   height: 450px;
   border-radius: 30px;
@@ -96,10 +96,10 @@
   height: 110px;
 }
 #weapon-img {
+  position: relative;
+  top: 10px;
   width: 87px;
   height: 87px;
-  top: 26px;
-  left: 581px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -107,7 +107,7 @@
   position: absolute;
   width: 177px;
   height: 80px;
-  top: 13px;
+  top: 26px;
   left: 579px;
   padding-left: 10px;
 }

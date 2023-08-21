@@ -12,7 +12,7 @@ const { spawn } = require("child_process");
 const createWindow = () => {
   // 创建浏览窗口
   const mainWindow = new BrowserWindow({
-    width: 1200,
+    width: 1240,
     height: 750,
     // 在这里隐藏菜单栏
     autoHideMenuBar: true,

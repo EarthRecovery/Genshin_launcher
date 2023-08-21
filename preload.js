@@ -96,12 +96,56 @@ contextBridge.exposeInMainWorld("myAPI", {
       const lv = document.getElementById("lv");
       lv.innerHTML = "Lv:90/" + CharacterCards.properties.level.val;
       //背景图片
+      //查找背景元素
+      //test
+      console.log(CharacterCards.stats.currentDendroEnergy.value);
+      function charEle(character) {
+        if (
+          character.stats.currentPyroEnergy.value > 0 ||
+          character.stats.pyroEnergyCost.value > 0
+        ) {
+          return "pyro";
+        } else if (
+          character.stats.currentHydroEnergy.value > 0 ||
+          character.stats.hydroEnergyCost.value > 0
+        ) {
+          return "hydro";
+        } else if (
+          character.stats.currentElectroEnergy.value > 0 ||
+          character.stats.electroEnergyCost.value > 0
+        ) {
+          return "electro";
+        } else if (
+          character.stats.currentAnemoEnergy.value > 0 ||
+          character.stats.anemoEnergyCost.value > 0
+        ) {
+          return "anemo";
+        } else if (
+          character.stats.currentCryoEnergy.value > 0 ||
+          character.stats.cryoEnergyCost.value > 0
+        ) {
+          return "cryo";
+        } else if (
+          character.stats.currentGeoEnergy.value > 0 ||
+          character.stats.geoEnergyCost.value > 0
+        ) {
+          return "geo";
+        } else if (
+          character.stats.currentDendroEnergy.value > 0 ||
+          character.stats.dendroEnergyCost.value > 0
+        ) {
+          return "dendro";
+        }
+      }
+
       //TODO:背景图片根据角色属性调整
       const characterCard = document.getElementById("characterCard");
       characterCard.style.backgroundImage =
         "linear-gradient(to right,rgba(157, 157, 157, 0),rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)),url('https://enka.network/ui/" +
         CharacterCards.assets.gachaIcon +
-        ".png'),url('./assets/cryo.png')";
+        ".png'),url('./assets/" +
+        charEle(CharacterCards) +
+        ".png')";
 
       //命座
       //TODO:命座发光

@@ -43,9 +43,26 @@
       myAPI.sendUID(-100);
       myAPI.getUsername();
       // 向主进程传递文件
-      function loadPage(page) {
-        myAPI.sendToMain("load-page", page);
-        myAPI.addToContent();
+      async function loadPage(page) {
+        content = document.getElementById("content");
+        //页面动画设计
+        //淡入
+        await new Promise((resolve) => {
+          setTimeout(() => {
+            content.style.opacity = "0";
+            myAPI.sendToMain("load-page", page);
+            myAPI.addToContent();
+            resolve();
+          }, 500);
+        });
+        //淡出
+        await new Promise((resolve) => {
+          setTimeout(() => {
+            content.style.opacity = "1";
+            resolve();
+          }, 500);
+        });
+
         if (page == "init") {
           myAPI.sendUID(-1);
           myAPI.getUsername();
@@ -66,8 +83,12 @@
 
             //打开原神
             myAPI.openGame();
+            //更换背景图片
+            document.getElementById("content").style.backgroundImage =
+              "url(../img/init2.jpg)";
           }, 100); // 延迟 100 毫秒
         }
+
         if (page == "character") {
           setTimeout(() => {
             myAPI.askForCharactersHeadImg();
@@ -75,6 +96,9 @@
             //一出场就加载第一个界面
             myAPI.askForCharacterCards(0);
             myAPI.CardRender();
+            //更换背景图片
+            document.getElementById("content").style.backgroundImage =
+              "url(../img/yuanxiaPalace.jpg)";
           }, 100);
         }
       }
@@ -142,13 +166,5 @@
         }
       }, 100); // 延迟 100 毫秒
     </script>
-
-    <style>
-      body {
-        background-image: url("../img/init.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-    </style>
   </body>
 </html>
