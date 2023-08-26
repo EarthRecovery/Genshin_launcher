@@ -64,6 +64,15 @@
         });
 
         if (page == "init") {
+          //按钮特效
+          //按钮特效
+          btn1 = document.getElementById("init-btn");
+          btn2 = document.getElementById("char-btn");
+          btn2.style.backgroundColor = "white";
+          btn2.style.color = "black";
+          btn1.style.backgroundColor = "#00000094";
+          btn1.style.color = "white";
+
           myAPI.sendUID(-1);
           myAPI.getUsername();
           //检测输入框按下enter
@@ -90,6 +99,13 @@
         }
 
         if (page == "character") {
+          //按钮特效
+          btn1 = document.getElementById("init-btn");
+          btn2 = document.getElementById("char-btn");
+          btn1.style.backgroundColor = "white";
+          btn1.style.color = "black";
+          btn2.style.backgroundColor = "#00000094";
+          btn2.style.color = "white";
           setTimeout(() => {
             myAPI.askForCharactersHeadImg();
             myAPI.setCharactersHeadImg();
@@ -148,8 +164,19 @@
         myAPI.openGame();
       }, 100); // 延迟 100 毫秒
 
+      var previousSelectedCircle = null;
       //角色卡片处理
       function loadcard(i) {
+        //设置卡片选取特效
+        var currentCircle = document.getElementById("c" + (i + 1));
+
+        if (previousSelectedCircle !== null) {
+          previousSelectedCircle.classList.remove("selected");
+        }
+
+        currentCircle.classList.add("selected");
+        previousSelectedCircle = currentCircle;
+        //切换界面
         myAPI.askForCharacterCards(i);
         myAPI.CardRender();
       }

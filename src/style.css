@@ -17,6 +17,7 @@
   background-repeat: no-repeat;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* 侧边栏 */
@@ -33,23 +34,16 @@
   background-color: rgb(255, 255, 255);
 }
 
-.icon-bars {
-  color: #000;
-}
-
-.icon-home {
-  color: #000;
-}
-
 /* 侧边栏按钮 */
 .circle-button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0);
-  color: white; /* 文字颜色 */
+  color: black; /* 文字颜色 */
   border: none;
   margin-bottom: 80px; /* 按钮之间的间距 */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 #tooltip-init {

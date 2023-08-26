@@ -103,7 +103,8 @@ const createWindow = () => {
               "sendUser",
               SuperUserName,
               SuperLevel,
-              SuperUserHeadImg
+              SuperUserHeadImg,
+              SuperUid
             );
           }
         } catch (parseError) {
@@ -118,9 +119,15 @@ const createWindow = () => {
       SuperUid = uid;
     } else {
       if (SuperUid == 0) {
-        event.reply("sendUser", "name", 0, "");
+        event.reply("sendUser", "name", 0, "", "User ID");
       } else {
-        event.reply("sendUser", SuperUserName, SuperLevel, SuperUserHeadImg);
+        event.reply(
+          "sendUser",
+          SuperUserName,
+          SuperLevel,
+          SuperUserHeadImg,
+          SuperUid
+        );
       }
       return;
     }
@@ -157,7 +164,7 @@ const createWindow = () => {
         //getHeadImg
         UserHeadImg = UserInfo.player.profilePicture.assets.icon;
         SuperUserHeadImg = UserHeadImg;
-        event.reply("sendUser", username, level, UserHeadImg);
+        event.reply("sendUser", username, level, UserHeadImg, uid);
 
         //获取8个角色头像
         cHIA = [];

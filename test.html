@@ -3,14 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>圣遗物发光</title>
   </head>
   <body>
-    <!--操场区域-->
-    <div class="playground">
-      <!--操场核心区域-->
-      <div class="central_area"></div>
-    </div>
+    <div class="relic glow"></div>
   </body>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #222;
+    }
+
+    .relic {
+      width: 100px;
+      height: 100px;
+      background-color: #ffcc00;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .glow {
+      box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00, 0 0 60px #ffcc00;
+      animation: glowAnimation 2s infinite alternate;
+    }
+
+    @keyframes glowAnimation {
+      0% {
+        box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00, 0 0 60px #ffcc00;
+      }
+      100% {
+        box-shadow: 0 0 30px #ffcc00, 0 0 50px #ffcc00, 0 0 70px #ffcc00;
+      }
+    }
+  </style>
 </html>

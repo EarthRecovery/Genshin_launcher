@@ -15,7 +15,7 @@ contextBridge.exposeInMainWorld("myAPI", {
     ipcRenderer.send("send-uid", inputText);
   },
   getUsername: () => {
-    ipcRenderer.on("sendUser", (event, UserName, level, UserHeadImg) => {
+    ipcRenderer.on("sendUser", (event, UserName, level, UserHeadImg, UID) => {
       //set name
       console.log(UserName);
       const contentDiv = document.getElementById("name");
@@ -29,6 +29,10 @@ contextBridge.exposeInMainWorld("myAPI", {
       const contentDiv3 = document.getElementById("headimg");
       contentDiv3.style.backgroundImage =
         "url(https://enka.network/ui/" + UserHeadImg + ".png)";
+
+      //set UID
+      const contentDiv4 = document.getElementById("uid");
+      contentDiv4.placeholder = UID;
     });
   },
   //原神启动
@@ -137,8 +141,60 @@ contextBridge.exposeInMainWorld("myAPI", {
           return "dendro";
         }
       }
+      //根据角色卡片调整特殊属性
+      function charSpecial(CharacterCards) {
+        const ele = charEle(CharacterCards);
+        if (ele == "pyro") {
+          return "火元素伤害加成";
+        } else if (ele == "hydro") {
+          return "水元素伤害加成";
+        } else if (ele == "electro") {
+          return "雷元素伤害加成";
+        } else if (ele == "anemo") {
+          return "风元素伤害加成";
+        } else if (ele == "cryo") {
+          return "冰元素伤害加成";
+        } else if (ele == "geo") {
+          return "岩元素伤害加成";
+        } else if (ele == "dendro") {
+          return "草元素伤害加成";
+        }
+      }
+      //根据角色卡片调整特殊属性数值
+      function charSpecialValue(CharacterCards) {
+        const ele = charEle(CharacterCards);
+        if (ele == "pyro") {
+          return (
+            Math.floor(CharacterCards.stats.pyroDamageBonus.value * 100) + "%"
+          );
+        } else if (ele == "hydro") {
+          return (
+            Math.floor(CharacterCards.stats.hydroDamageBonus.value * 100) + "%"
+          );
+        } else if (ele == "electro") {
+          return (
+            Math.floor(CharacterCards.stats.electroDamageBonus.value * 100) +
+            "%"
+          );
+        } else if (ele == "anemo") {
+          return (
+            Math.floor(CharacterCards.stats.anemoDamageBonus.value * 100) + "%"
+          );
+        } else if (ele == "cryo") {
+          return (
+            Math.floor(CharacterCards.stats.cryoDamageBonus.value * 100) + "%"
+          );
+        } else if (ele == "geo") {
+          return (
+            Math.floor(CharacterCards.stats.geoDamageBonus.value * 100) + "%"
+          );
+        } else if (ele == "dendro") {
+          return (
+            Math.floor(CharacterCards.stats.dendroDamageBonus.value * 100) + "%"
+          );
+        }
+      }
 
-      //TODO:背景图片根据角色属性调整
       const characterCard = document.getElementById("characterCard");
       characterCard.style.backgroundImage =
         "linear-gradient(to right,rgba(157, 157, 157, 0),rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)),url('https://enka.network/ui/" +
@@ -150,6 +206,7 @@ contextBridge.exposeInMainWorld("myAPI", {
       //命座
       //TODO:命座发光
       const cs1 = document.getElementById("cs1");
+      const ascension = CharacterCards.properties.ascension.val;
       cs1.style.backgroundImage =
         "url(https://enka.network/ui/" +
         CharacterCards.assets.constellations[0] +
@@ -234,6 +291,9 @@ contextBridge.exposeInMainWorld("myAPI", {
       characterAttr[6].innerHTML =
         Math.floor(CharacterCards.stats.energyRecharge.value * 100) + "%";
       //特殊角色属性 TODO:根据角色属性调整
+      specialWord = document.getElementById("specialWord");
+      specialWord.innerHTML = charSpecial(CharacterCards);
+      characterAttr[7].innerHTML = charSpecialValue(CharacterCards);
       //圣遗物图片
       artiImg = document.getElementsByClassName("artiImg");
       artiImg[0].style.backgroundImage =
