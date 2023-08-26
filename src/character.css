@@ -56,3 +56,25 @@ body {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   background-color: #bcaadf;
 }
+
+.relic {
+  width: 100px;
+  height: 100px;
+  background-color: #ffcc00;
+  border-radius: 50%;
+  position: relative;
+}
+
+.glow {
+  box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00, 0 0 60px #ffcc00;
+  animation: glowAnimation 2s infinite alternate;
+}
+
+@keyframes glowAnimation {
+  0% {
+    box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00, 0 0 60px #ffcc00;
+  }
+  100% {
+    box-shadow: 0 0 30px #ffcc00, 0 0 50px #ffcc00, 0 0 70px #ffcc00;
+  }
+}

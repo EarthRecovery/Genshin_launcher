@@ -50,6 +50,7 @@
   margin: 10px 0; /* 控制圆圈之间的间距 */
   background-repeat: no-repeat;
   background-size: cover;
+  color: yellow;
 }
 
 /* 技能栏 */

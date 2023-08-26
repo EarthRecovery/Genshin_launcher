@@ -163,35 +163,19 @@ contextBridge.exposeInMainWorld("myAPI", {
       //根据角色卡片调整特殊属性数值
       function charSpecialValue(CharacterCards) {
         const ele = charEle(CharacterCards);
-        if (ele == "pyro") {
-          return (
-            Math.floor(CharacterCards.stats.pyroDamageBonus.value * 100) + "%"
-          );
-        } else if (ele == "hydro") {
-          return (
-            Math.floor(CharacterCards.stats.hydroDamageBonus.value * 100) + "%"
-          );
-        } else if (ele == "electro") {
-          return (
-            Math.floor(CharacterCards.stats.electroDamageBonus.value * 100) +
-            "%"
-          );
-        } else if (ele == "anemo") {
-          return (
-            Math.floor(CharacterCards.stats.anemoDamageBonus.value * 100) + "%"
-          );
-        } else if (ele == "cryo") {
-          return (
-            Math.floor(CharacterCards.stats.cryoDamageBonus.value * 100) + "%"
-          );
-        } else if (ele == "geo") {
-          return (
-            Math.floor(CharacterCards.stats.geoDamageBonus.value * 100) + "%"
-          );
-        } else if (ele == "dendro") {
-          return (
-            Math.floor(CharacterCards.stats.dendroDamageBonus.value * 100) + "%"
-          );
+
+        const damageBonuses = {
+          pyro: CharacterCards.stats.pyroDamageBonus.value,
+          hydro: CharacterCards.stats.hydroDamageBonus.value,
+          electro: CharacterCards.stats.electroDamageBonus.value,
+          anemo: CharacterCards.stats.anemoDamageBonus.value,
+          cryo: CharacterCards.stats.cryoDamageBonus.value,
+          geo: CharacterCards.stats.geoDamageBonus.value,
+          dendro: CharacterCards.stats.dendroDamageBonus.value,
+        };
+
+        if (damageBonuses.hasOwnProperty(ele)) {
+          return Math.floor(damageBonuses[ele] * 100) + "%";
         }
       }
 
@@ -204,38 +188,43 @@ contextBridge.exposeInMainWorld("myAPI", {
         ".png')";
 
       //命座
-      //TODO:命座发光
-      const cs1 = document.getElementById("cs1");
-      const ascension = CharacterCards.properties.ascension.val;
-      cs1.style.backgroundImage =
-        "url(https://enka.network/ui/" +
-        CharacterCards.assets.constellations[0] +
-        ".png)";
-      const cs2 = document.getElementById("cs2");
-      cs2.style.backgroundImage =
-        "url(https://enka.network/ui/" +
-        CharacterCards.assets.constellations[1] +
-        ".png)";
-      const cs3 = document.getElementById("cs3");
-      cs3.style.backgroundImage =
-        "url(https://enka.network/ui/" +
-        CharacterCards.assets.constellations[2] +
-        ".png)";
-      const cs4 = document.getElementById("cs4");
-      cs4.style.backgroundImage =
-        "url(https://enka.network/ui/" +
-        CharacterCards.assets.constellations[3] +
-        ".png)";
-      const cs5 = document.getElementById("cs5");
-      cs5.style.backgroundImage =
-        "url(https://enka.network/ui/" +
-        CharacterCards.assets.constellations[4] +
-        ".png)";
-      const cs6 = document.getElementById("cs6");
-      cs6.style.backgroundImage =
-        "url(https://enka.network/ui/" +
-        CharacterCards.assets.constellations[5] +
-        ".png)";
+      const ascension = CharacterCards.constellationsList.length;
+      const constellations = CharacterCards.assets.constellations;
+      for (let i = 1; i <= 6; i++) {
+        const cs = document.getElementById("cs" + i);
+        cs.style.backgroundImage =
+          "url(https://enka.network/ui/" + constellations[i - 1] + ".png)";
+      }
+      //命座发光
+      const consList = document.getElementsByClassName("ConCircle");
+      for (var i = 0; i < 6; i++) {
+        if (i < ascension) {
+          consList[i].classList.add("relic", "glow");
+        } else {
+          consList[i].classList.remove("relic", "glow");
+        }
+      }
+      //命座背景
+      const ConsBGC = {
+        pyro: "#ff7f4273",
+        hydro: "#3456ff73",
+        electro: "#cc7aff73",
+        anemo: "#7afff973",
+        cryo: "#7afff973",
+        geo: "#ffd64273",
+        dendro: "#77ff8e80",
+      };
+
+      const ele = charEle(CharacterCards);
+      if (ConsBGC.hasOwnProperty(ele)) {
+        for (var i = 0; i < 6; i++) {
+          if (i < ascension) {
+            consList[i].style.backgroundColor = ConsBGC[ele];
+          } else {
+            consList[i].style.backgroundColor = "rgb(39, 39, 39)";
+          }
+        }
+      }
       //技能图片
 
       const sk1 = document.getElementById("sk1");
