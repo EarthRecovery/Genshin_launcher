@@ -236,6 +236,11 @@ const createWindow = () => {
     event.reply("sendCharacterCards", SuperCharactersCardArray[index]);
   });
 
+  //返回角色uid
+  ipcMain.on("askUID", (event) => {
+    event.reply("returnUIDandRender", SuperUid == 0 ? null : SuperUid);
+  });
+
   //实现打开原神游戏功能
   ipcMain.on("open-game", (event, gamePath) => {
     //打开原神游戏

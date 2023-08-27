@@ -44,6 +44,10 @@
       myAPI.getUsername();
       // 向主进程传递文件
       async function loadPage(page) {
+        //判断uid是否存在
+        myAPI.getUID();
+        console.log("aaa");
+        myAPI.returnUIDandRender(page);
         content = document.getElementById("content");
         //页面动画设计
         //淡入

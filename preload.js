@@ -46,6 +46,21 @@ contextBridge.exposeInMainWorld("myAPI", {
       ipcRenderer.send("open-game", gamePath);
     });
   },
+  //请求uid
+  getUID: () => {
+    ipcRenderer.send("askUID");
+  },
+  //发送uid
+  returnUIDandRender: (page) => {
+    ipcRenderer.on("returnUIDandRender", (event, UID) => {
+      console.log(UID);
+      if (page == "character" && UID == null) {
+        alert("请先输入UID");
+        // loadPage("init");
+        return "no uid";
+      }
+    });
+  },
   //请求发送角色头像
   askForCharactersHeadImg: () => {
     ipcRenderer.send("askForCharactorsHeadImg");
