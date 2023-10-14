@@ -1,13 +1,13 @@
 # Genshin_launcher 原神，启动！
 
 ### 原神启动器 Genshin_launcher--Powered by Lyx
-支持启动游戏。 Game launch available.
- 支持自定义游戏路径。 Game path customizable.
- 支持原神。 Genshin Impact supported.
- 界面、用户体验优化。 UI/UX optimization.
- 原神分析玩家游戏数据。 Analyze player info for Genshin Impact.
- 获取数据 / Retrieve data
- 呈现数据 / Display data
+支持启动游戏。 Game launch available. \\
+ 支持自定义游戏路径。 Game path customizable. \\
+ 支持原神。 Genshin Impact supported.\\
+ 界面、用户体验优化。 UI/UX optimization.\\
+ 原神分析玩家游戏数据。 Analyze player info for Genshin Impact.\\
+ 获取数据 / Retrieve data\\
+ 呈现数据 / Display data\\
 
 ## 现在已经完成的工作 ：
 
