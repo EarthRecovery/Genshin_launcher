@@ -1,18 +1,15 @@
 # Genshin_launcher 原神，启动！
 
-### 原神启动器--Powered by Lyx
-我将在50个工作日内完成这个项目
+### 原神启动器 Genshin_launcher--Powered by Lyx
+支持启动游戏。 Game launch available.
+ 支持自定义游戏路径。 Game path customizable.
+ 支持原神。 Genshin Impact supported.
+ 界面、用户体验优化。 UI/UX optimization.
+ 原神分析玩家游戏数据。 Analyze player info for Genshin Impact.
+ 获取数据 / Retrieve data
+ 呈现数据 / Display data
 
-包含
-
-1. 原神启动
-2. 查找拥有的角色
-3. 玩家基本信息
-4. 祈愿查找
-5. 传送门
-6. 彩蛋
-
-## 现在已经完成的工作：
+## 现在已经完成的工作 ：
 
 **2023/8/9**
 
